@@ -12,7 +12,7 @@ OpenMC官网 : https://openmc.readthedocs.io/en/stable
 [Openmc Users Group](https://groups.google.com/forum/?nomobile=true#!forum/openmc-users)
 的帮助，使得OpenMC入门教程得以完成。我希望这份教程能够帮助你，尤其是当今还有个国家还实行互联网封锁，给科研人员的工作和交流产生极大地不便。这份教程最大特色是吸收大部分GFW封锁的OpenMC资源，假如你不会科学上网，那么这份教程对你的帮助将会是巨大的。
 
-## 在这里，你将学会如何编译、安装、使用OpenMC
+## 你将学会如何编译、安装、使用OpenMC
 
 查看教程，请访问：[OpenMC教程](https://github.com/t2015q/OpenMC-Users-Guide/wiki) 
 
