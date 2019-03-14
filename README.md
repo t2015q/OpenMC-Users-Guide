@@ -14,5 +14,5 @@ OpenMC官网 : https://openmc.readthedocs.io/en/stable
 
 ## 在这里，你将学会如何编译、安装、使用OpenMC
 
-查看教程，请访问：https://github.com/t2015q/OpenMC-Users-Guide/wiki 
+查看教程，请访问：[OpenMC教程](https://github.com/t2015q/OpenMC-Users-Guide/wiki) 
 
