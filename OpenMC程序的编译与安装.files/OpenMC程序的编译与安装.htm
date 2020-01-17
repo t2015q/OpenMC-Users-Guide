@@ -1,0 +1,3099 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=gb2312">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 15">
+<meta name=Originator content="Microsoft Word 15">
+<link rel=File-List href="OpenMC程序的编译与安装.files/filelist.xml">
+<link rel=Edit-Time-Data href="OpenMC程序的编译与安装.files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>tang</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>tang</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>1</o:TotalTime>
+  <o:Created>2020-01-17T13:47:00Z</o:Created>
+  <o:LastSaved>2020-01-17T13:47:00Z</o:LastSaved>
+  <o:Pages>8</o:Pages>
+  <o:Words>702</o:Words>
+  <o:Characters>4004</o:Characters>
+  <o:Lines>33</o:Lines>
+  <o:Paragraphs>9</o:Paragraphs>
+  <o:CharactersWithSpaces>4697</o:CharactersWithSpaces>
+  <o:Version>16.00</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<link rel=themeData href="OpenMC程序的编译与安装.files/themedata.thmx">
+<link rel=colorSchemeMapping href="OpenMC程序的编译与安装.files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:DrawingGridVerticalSpacing>7.8 磅</w:DrawingGridVerticalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>2</w:DisplayVerticalDrawingGridEvery>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>ZH-CN</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:SpaceForUL/>
+   <w:BalanceSingleByteDoubleByteWidth/>
+   <w:DoNotLeaveBackslashAlone/>
+   <w:ULTrailSpace/>
+   <w:DoNotExpandShiftReturn/>
+   <w:AdjustLineHeightInTable/>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:EnableOpenTypeKerning/>
+   <w:DontFlipMirrorIndents/>
+   <w:OverrideTableStyleHps/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="376">
+  <w:LsdException Locked="false" Priority="0" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 9"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="header"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footer"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index heading"/>
+  <w:LsdException Locked="false" Priority="35" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of figures"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope return"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="line number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="page number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of authorities"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="macro"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toa heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 5"/>
+  <w:LsdException Locked="false" Priority="10" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Closing"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Signature"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Message Header"/>
+  <w:LsdException Locked="false" Priority="11" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Salutation"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Date"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Note Heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Block Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="FollowedHyperlink"/>
+  <w:LsdException Locked="false" Priority="22" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Document Map"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Plain Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="E-mail Signature"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Top of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Bottom of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal (Web)"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Acronym"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Cite"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Code"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Definition"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Keyboard"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Preformatted"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Sample"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Typewriter"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Variable"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Table"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation subject"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="No List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Contemporary"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Elegant"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Professional"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Balloon Text"/>
+  <w:LsdException Locked="false" Priority="39" Name="Table Grid"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Theme"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" QFormat="true"
+   Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" QFormat="true"
+   Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+  <w:LsdException Locked="false" Priority="41" Name="Plain Table 1"/>
+  <w:LsdException Locked="false" Priority="42" Name="Plain Table 2"/>
+  <w:LsdException Locked="false" Priority="43" Name="Plain Table 3"/>
+  <w:LsdException Locked="false" Priority="44" Name="Plain Table 4"/>
+  <w:LsdException Locked="false" Priority="45" Name="Plain Table 5"/>
+  <w:LsdException Locked="false" Priority="40" Name="Grid Table Light"/>
+  <w:LsdException Locked="false" Priority="46" Name="Grid Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="Grid Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="Grid Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="46" Name="List Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="List Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="List Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Mention"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Smart Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Hashtag"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Unresolved Mention"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Smart Link"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:黑体;
+	panose-1:2 1 6 9 6 1 1 1 1 1;
+	mso-font-alt:SimHei;
+	mso-font-charset:134;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-2147482945 953122042 22 0 262145 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:等线;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:DengXian;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610612033 953122042 22 0 262159 0;}
+@font-face
+	{font-family:"等线 Light";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610612033 953122042 22 0 262159 0;}
+@font-face
+	{font-family:"\@黑体";
+	panose-1:2 1 6 9 6 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-2147482945 953122042 22 0 262145 0;}
+@font-face
+	{font-family:"\@等线";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610612033 953122042 22 0 262159 0;}
+@font-face
+	{font-family:"\@等线 Light";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610612033 953122042 22 0 262159 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.5pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:等线;
+	mso-ascii-font-family:等线;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:等线;
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:等线;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-font-kerning:1.0pt;}
+h1
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"标题 1 字符";
+	mso-style-next:正文;
+	margin-top:17.0pt;
+	margin-right:0cm;
+	margin-bottom:16.5pt;
+	margin-left:0cm;
+	line-height:240%;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:22.0pt;
+	font-family:等线;
+	mso-ascii-font-family:等线;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:等线;
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:等线;
+	mso-hansi-theme-font:minor-latin;
+	mso-font-kerning:22.0pt;}
+h2
+	{mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-link:"标题 2 字符";
+	mso-style-next:正文;
+	margin-top:13.0pt;
+	margin-right:0cm;
+	margin-bottom:13.0pt;
+	margin-left:0cm;
+	line-height:173%;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:16.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;}
+h3
+	{mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-link:"标题 3 字符";
+	mso-style-next:正文;
+	margin-top:13.0pt;
+	margin-right:0cm;
+	margin-bottom:13.0pt;
+	margin-left:0cm;
+	line-height:173%;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:16.0pt;
+	font-family:等线;
+	mso-ascii-font-family:等线;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:等线;
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:等线;
+	mso-hansi-theme-font:minor-latin;
+	mso-font-kerning:1.0pt;}
+h4
+	{mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-link:"标题 4 字符";
+	mso-style-next:正文;
+	margin-top:14.0pt;
+	margin-right:0cm;
+	margin-bottom:14.5pt;
+	margin-left:0cm;
+	line-height:156%;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:4;
+	font-size:14.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:#954F72;
+	mso-themecolor:followedhyperlink;
+	text-decoration:underline;
+	text-underline:single;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-indent:21.0pt;
+	mso-char-indent-count:2.0;
+	mso-pagination:widow-orphan;
+	font-size:10.5pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:等线;
+	mso-ascii-font-family:等线;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:等线;
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:等线;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-font-kerning:1.0pt;}
+span.1
+	{mso-style-name:"标题 1 字符";
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"标题 1";
+	mso-ansi-font-size:22.0pt;
+	mso-bidi-font-size:22.0pt;
+	mso-font-kerning:22.0pt;
+	font-weight:bold;}
+span.2
+	{mso-style-name:"标题 2 字符";
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"标题 2";
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	font-weight:bold;}
+span.3
+	{mso-style-name:"标题 3 字符";
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"标题 3";
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-weight:bold;}
+span.4
+	{mso-style-name:"标题 4 字符";
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"标题 4";
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	font-weight:bold;}
+span.mw-headline
+	{mso-style-name:mw-headline;
+	mso-style-unhide:no;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+ /* Page Definitions */
+ @page
+	{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	mso-header-margin:42.55pt;
+	mso-footer-margin:49.6pt;
+	mso-paper-source:0;
+	layout-grid:15.6pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:202404071;
+	mso-list-type:hybrid;
+	mso-list-template-ids:297045288 -668937968 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l0:level1
+	{mso-level-text:"3\.2\.%1";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:29.25pt;
+	text-indent:-21.0pt;}
+@list l0:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%2\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:42.0pt;
+	text-indent:-21.0pt;}
+@list l0:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:63.0pt;
+	text-indent:-21.0pt;}
+@list l0:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:84.0pt;
+	text-indent:-21.0pt;}
+@list l0:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%5\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:105.0pt;
+	text-indent:-21.0pt;}
+@list l0:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:126.0pt;
+	text-indent:-21.0pt;}
+@list l0:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:147.0pt;
+	text-indent:-21.0pt;}
+@list l0:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%8\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:168.0pt;
+	text-indent:-21.0pt;}
+@list l0:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:189.0pt;
+	text-indent:-21.0pt;}
+@list l1
+	{mso-list-id:224029061;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1472880706 -1532173066 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l1:level1
+	{mso-level-text:"3\.2\.2\.%1";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:29.25pt;
+	text-indent:-21.0pt;}
+@list l1:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%2\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:42.0pt;
+	text-indent:-21.0pt;}
+@list l1:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:63.0pt;
+	text-indent:-21.0pt;}
+@list l1:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:84.0pt;
+	text-indent:-21.0pt;}
+@list l1:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%5\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:105.0pt;
+	text-indent:-21.0pt;}
+@list l1:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:126.0pt;
+	text-indent:-21.0pt;}
+@list l1:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:147.0pt;
+	text-indent:-21.0pt;}
+@list l1:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%8\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:168.0pt;
+	text-indent:-21.0pt;}
+@list l1:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:189.0pt;
+	text-indent:-21.0pt;}
+@list l2
+	{mso-list-id:318580144;
+	mso-list-type:hybrid;
+	mso-list-template-ids:662841276 -1588668436 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l2:level1
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"\(%1\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:21.0pt;
+	text-indent:-21.0pt;}
+@list l2:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%2\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:42.0pt;
+	text-indent:-21.0pt;}
+@list l2:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:63.0pt;
+	text-indent:-21.0pt;}
+@list l2:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:84.0pt;
+	text-indent:-21.0pt;}
+@list l2:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%5\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:105.0pt;
+	text-indent:-21.0pt;}
+@list l2:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:126.0pt;
+	text-indent:-21.0pt;}
+@list l2:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:147.0pt;
+	text-indent:-21.0pt;}
+@list l2:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%8\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:168.0pt;
+	text-indent:-21.0pt;}
+@list l2:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:189.0pt;
+	text-indent:-21.0pt;}
+@list l3
+	{mso-list-id:367145037;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-165000156 -133780660 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l3:level1
+	{mso-level-text:"3\.1\.%1";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:29.25pt;
+	text-indent:-21.0pt;}
+@list l3:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%2\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:42.0pt;
+	text-indent:-21.0pt;}
+@list l3:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:63.0pt;
+	text-indent:-21.0pt;}
+@list l3:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:84.0pt;
+	text-indent:-21.0pt;}
+@list l3:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%5\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:105.0pt;
+	text-indent:-21.0pt;}
+@list l3:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:126.0pt;
+	text-indent:-21.0pt;}
+@list l3:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:147.0pt;
+	text-indent:-21.0pt;}
+@list l3:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%8\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:168.0pt;
+	text-indent:-21.0pt;}
+@list l3:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:189.0pt;
+	text-indent:-21.0pt;}
+@list l4
+	{mso-list-id:490829979;
+	mso-list-type:hybrid;
+	mso-list-template-ids:640325332 653820198 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l4:level1
+	{mso-level-text:"3\.%1";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:29.25pt;
+	text-indent:-21.0pt;}
+@list l4:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%2\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:42.0pt;
+	text-indent:-21.0pt;}
+@list l4:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:63.0pt;
+	text-indent:-21.0pt;}
+@list l4:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:84.0pt;
+	text-indent:-21.0pt;}
+@list l4:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%5\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:105.0pt;
+	text-indent:-21.0pt;}
+@list l4:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:126.0pt;
+	text-indent:-21.0pt;}
+@list l4:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:147.0pt;
+	text-indent:-21.0pt;}
+@list l4:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%8\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:168.0pt;
+	text-indent:-21.0pt;}
+@list l4:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:189.0pt;
+	text-indent:-21.0pt;}
+@list l5
+	{mso-list-id:683475520;
+	mso-list-type:hybrid;
+	mso-list-template-ids:557999512 -1380687332 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l5:level1
+	{mso-level-number-format:chinese-counting-thousand;
+	mso-level-text:第%1章;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:21.0pt;
+	text-indent:-21.0pt;}
+@list l5:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%2\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:42.0pt;
+	text-indent:-21.0pt;}
+@list l5:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:63.0pt;
+	text-indent:-21.0pt;}
+@list l5:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:84.0pt;
+	text-indent:-21.0pt;}
+@list l5:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%5\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:105.0pt;
+	text-indent:-21.0pt;}
+@list l5:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:126.0pt;
+	text-indent:-21.0pt;}
+@list l5:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:147.0pt;
+	text-indent:-21.0pt;}
+@list l5:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%8\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:168.0pt;
+	text-indent:-21.0pt;}
+@list l5:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:189.0pt;
+	text-indent:-21.0pt;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:普通表格;
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.5pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:等线;
+	mso-ascii-font-family:等线;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:等线;
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:等线;
+	mso-hansi-theme-font:minor-latin;
+	mso-font-kerning:1.0pt;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1038"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=ZH-CN link=blue vlink="#954F72" style='tab-interval:21.0pt;
+text-justify-trim:punctuation'>
+
+<div class=WordSection1 style='layout-grid:15.6pt'>
+
+<h1 align=center style='margin-top:13.0pt;margin-right:0cm;margin-bottom:13.0pt;
+margin-left:0cm;text-align:center;text-indent:0cm;line-height:20.0pt;
+mso-line-height-rule:exactly;mso-list:l5 level1 lfo2'><a name="_Toc9524604"></a><a
+name="_Toc9429012"></a><a name="_Toc9428972"></a><a name="_Toc9428934"></a><a
+name="_Toc9416065"><span style='mso-bookmark:_Toc9428934'><span
+style='mso-bookmark:_Toc9428972'><span style='mso-bookmark:_Toc9429012'><span
+style='mso-bookmark:_Toc9524604'><![if !supportLists]><span lang=EN-US
+style='font-size:16.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+黑体;mso-bidi-font-family:黑体'><span style='mso-list:Ignore'>第一章<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]></span></span></span></span></a><span
+class=SpellE><span style='mso-bookmark:_Toc9416065'><span style='mso-bookmark:
+_Toc9428934'><span style='mso-bookmark:_Toc9428972'><span style='mso-bookmark:
+_Toc9429012'><span style='mso-bookmark:_Toc9524604'><span lang=EN-US
+style='font-size:16.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+黑体'>OpenMC</span></span></span></span></span></span></span><span
+style='mso-bookmark:_Toc9416065'><span style='mso-bookmark:_Toc9428934'><span
+style='mso-bookmark:_Toc9428972'><span style='mso-bookmark:_Toc9429012'><span
+style='mso-bookmark:_Toc9524604'><span style='font-size:16.0pt;font-family:
+黑体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>程序的编译与安装</span></span></span></span></span></span><span
+style='mso-bookmark:_Toc9524604'></span><span style='mso-bookmark:_Toc9429012'></span><span
+style='mso-bookmark:_Toc9428972'></span><span style='mso-bookmark:_Toc9428934'></span><span
+style='mso-bookmark:_Toc9416065'></span><span lang=EN-US style='font-size:16.0pt;
+font-family:"Times New Roman",serif;mso-fareast-font-family:黑体'><o:p></o:p></span></h1>
+
+<p class=MsoNormal style='text-indent:24.0pt;mso-char-indent-count:2.0;
+line-height:20.0pt;mso-line-height-rule:exactly'><span class=mw-headline><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>本章将介绍编译、安装</span></span><span
+class=SpellE><span class=mw-headline><span lang=EN-US style='font-size:12.0pt;
+font-family:"Times New Roman",serif'>OpenMC</span></span></span><span
+class=mw-headline><span style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman"'>（</span></span><span
+class=mw-headline><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>0.10.0</span></span><span
+class=mw-headline><span style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman"'>）的两种方法。第一种方法，简称：</span></span><span
+class=SpellE><span class=mw-headline><span lang=EN-US style='font-size:12.0pt;
+font-family:"Times New Roman",serif'>conda</span></span></span><span
+class=mw-headline><span style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman"'>方法，安装相对容易。另一种使用源码进行编译与安装，需涉及编译环境的搭建。</span></span><span
+class=mw-headline><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'><o:p></o:p></span></span></p>
+
+<p class=MsoNormal style='text-indent:24.0pt;mso-char-indent-count:2.0;
+line-height:20.0pt;mso-line-height-rule:exactly'><span class=mw-headline><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>本文选择</span></span><span
+class=mw-headline><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>Ubuntu
+18.04</span></span><span class=mw-headline><span style='font-size:12.0pt;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>进行程序的安装。因为</span></span><span
+class=SpellE><span class=mw-headline><span lang=EN-US style='font-size:12.0pt;
+font-family:"Times New Roman",serif'>linux</span></span></span><span
+class=mw-headline><span style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman"'>系统小巧、功能强大，并且拥有齐全的编译工具，方便开展工作；在程序运行效率上，优势比</span></span><span
+class=mw-headline><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>Windows</span></span><span
+class=mw-headline><span style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman"'>明显，可以节省程序运行时间。另外，</span></span><span
+class=SpellE><span class=mw-headline><span lang=EN-US style='font-size:12.0pt;
+font-family:"Times New Roman",serif'>linux</span></span></span><span
+class=mw-headline><span style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman"'>发行版很多，可选择自己喜欢的版本，不过本文建议新手选择</span></span><span
+class=mw-headline><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>Ubuntu</span></span><span
+class=mw-headline><span style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman"'>系统，因为它的高级打包工具（</span></span><span
+class=mw-headline><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>apt</span></span><span
+class=mw-headline><span style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman"'>）在安装编译工具时，可以省下不少精力。其他版本如</span></span><span
+class=mw-headline><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>Centos</span></span><span
+class=mw-headline><span style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman"'>，由于</span></span><span
+class=mw-headline><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>yum</span></span><span
+class=mw-headline><span style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman"'>下载的</span></span><span
+class=SpellE><span class=mw-headline><span lang=EN-US style='font-size:12.0pt;
+font-family:"Times New Roman",serif'>OpenMC</span></span></span><span
+class=mw-headline><span style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman"'>编译工具版本太低使得程序无法正常编译，需要先编译、安装高版本编译工具，对新手十分不方便。</span></span><span
+class=mw-headline><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'><o:p></o:p></span></span></p>
+
+<h2 style='margin-left:8.2pt;text-indent:0cm;line-height:20.0pt;mso-line-height-rule:
+exactly;mso-list:l4 level1 lfo3'><a name="_Toc9524605"></a><a name="_Toc9429013"></a><a
+name="_Toc9428973"></a><a name="_Toc9428935"></a><a name="_Toc9416066"><span
+style='mso-bookmark:_Toc9428935'><span style='mso-bookmark:_Toc9428973'><span
+style='mso-bookmark:_Toc9429013'><span style='mso-bookmark:_Toc9524605'><![if !supportLists]><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'><span style='mso-list:Ignore'>3.1<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span class=mw-headline><span style='font-size:
+14.0pt;font-family:黑体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>编译方法介绍</span></span></span></span></span></span></a><span
+style='mso-bookmark:_Toc9524605'></span><span style='mso-bookmark:_Toc9429013'></span><span
+style='mso-bookmark:_Toc9428973'></span><span style='mso-bookmark:_Toc9428935'></span><span
+style='mso-bookmark:_Toc9416066'></span><span lang=EN-US style='font-size:14.0pt;
+font-family:"Times New Roman",serif;mso-fareast-font-family:黑体'><o:p></o:p></span></h2>
+
+<h3 style='margin-left:8.2pt;text-indent:0cm;line-height:20.0pt;mso-line-height-rule:
+exactly;mso-list:l3 level1 lfo4'><![if !supportLists]><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+"Times New Roman"'><span style='mso-list:Ignore'>3.1.1<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span class=SpellE><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+黑体'>Conda</span></span><span lang=EN-US style='font-size:12.0pt;font-family:
+"Times New Roman",serif;mso-fareast-font-family:黑体'>-forge</span><span
+style='font-size:12.0pt;font-family:黑体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman"'>安装方法</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:黑体'><o:p></o:p></span></h3>
+
+<p class=MsoNormal style='text-indent:24.0pt;mso-char-indent-count:2.0;
+line-height:20.0pt;mso-line-height-rule:exactly'><span class=SpellE><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>OpenMC</span></span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>代码保存在</span><span
+class=SpellE><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>conda</span></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>-forge</span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>，</span><span
+class=SpellE><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>conda</span></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>-forge</span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>类似一个云盘，当系统拥有</span><span
+class=SpellE><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>conda</span></span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>环境，即可安装</span><span
+class=SpellE><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>OpenMC</span></span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>。</span><span
+class=SpellE><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>Conda</span></span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>是一个开源软件包管理系统和环境管理系统，它包含在所有版本的</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>Anaconda</span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>。</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>Anaconda</span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>是一个免费开源的</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>Python</span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>发行版，拥有全面的</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>Python</span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>库</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>(library)</span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>和相关软件，方便用户使用。由于</span><span
+class=SpellE><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>OpenMC</span></span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>程序需要依赖</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>Python</span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>工具和它的模块来处理数据结果，为此需要安装</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>Anaconda</span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>，再来安装</span><span
+class=SpellE><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>OpenMC</span></span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>。</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:24.0pt;mso-char-indent-count:2.0;
+line-height:20.0pt;mso-line-height-rule:exactly'><span style='font-size:12.0pt;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>由于</span><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif'>Anaconda</span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>版本的更新速度较快，新版本在运行</span><span
+class=SpellE><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>OpenMC</span></span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>时候，会出现许多问题，比如</span><span
+class=SpellE><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>OpenMC</span></span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>最高支持</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>Python
+3.7.1,</span><span style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman"'>当安装</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>Python
+3.7.3</span><span style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman"'>或者更高版本时候，</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>Python </span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>可能无法导入</span><span
+class=SpellE><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>OpenMC</span></span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>了。另外，</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>Anaconda</span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>版本比较低时，需根据</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>Python</span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>版本安装</span><span
+class=SpellE><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>conda</span></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>-forge</span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>对应</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>Python</span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>版本的</span><span
+class=SpellE><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>OpenMC</span></span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>。</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:24.0pt;mso-char-indent-count:2.0;
+line-height:20.0pt;mso-line-height-rule:exactly'><span style='font-size:12.0pt;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>本文选择</span><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif'>anaconda3-5.3.1-Linux-x86_64.sh</span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>的</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>Anaconda</span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>版本。</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:20.0pt;mso-line-height-rule:exactly'><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>第一步，下载</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>Anaconda</span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>软件包：</span><span
+lang=EN-US><a href="https://repo.continuum.io/archive"><span style='font-size:
+12.0pt;font-family:"Times New Roman",serif'>https://repo.continuum.io/archive</span></a></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'> <o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:20.0pt;mso-line-height-rule:exactly'><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>第二步，按图</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>3.1</span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>步骤进行</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>Anaconda</span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>安装，若需设置</span><span
+class=SpellE><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>conda</span></span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>环境变量请编辑默认目录下的</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>.<span
+class=SpellE>bashrc</span></span><span style='font-size:12.0pt;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>文件</span><span style='font-size:12.0pt;font-family:"Times New Roman",serif'>
+</span><span style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman"'>：</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:136.5pt;mso-para-margin-left:13.0gd;
+line-height:20.0pt;mso-line-height-rule:exactly'><span class=SpellE><span
+class=GramE><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+color:#7030A0;background:white'>gedit</span></span></span><span class=GramE><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+color:#7030A0;background:white'> </span><span lang=EN-US style='font-size:12.0pt;
+font-family:"Times New Roman",serif'><span
+style='mso-spacerun:yes'>&nbsp;</span>~</span></span><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif'>/.<span
+class=SpellE>bashrc</span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:136.5pt;mso-para-margin-left:13.0gd;
+line-height:20.0pt;mso-line-height-rule:exactly'><span class=GramE><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+color:#FFC000'>export </span><span lang=EN-US style='font-size:12.0pt;
+font-family:"Times New Roman",serif'><span
+style='mso-spacerun:yes'>&nbsp;</span><span style='color:#0070C0'>PATH</span></span></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+color:#0070C0'>=</span><span lang=EN-US style='font-size:12.0pt;font-family:
+"Times New Roman",serif'>&quot;/<span class=SpellE>your_path_to</span>/anaconda3/bin:<span
+style='color:#0070C0'>$PATH</span>&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:136.5pt;mso-para-margin-left:13.0gd;
+line-height:20.0pt;mso-line-height-rule:exactly'><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif;color:#7030A0;
+background:white'>source </span><span lang=EN-US style='font-size:12.0pt;
+font-family:"Times New Roman",serif;color:#0070C0;background:white'><span
+style='mso-spacerun:yes'>&nbsp;</span></span><span lang=EN-US style='font-size:
+12.0pt;font-family:"Times New Roman",serif'><span
+style='mso-spacerun:yes'>&nbsp;</span>~<span class=GramE>/.<span class=SpellE>bashrc</span></span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:20.0pt;mso-line-height-rule:exactly'><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>第三步，添加</span><span
+class=SpellE><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>conda</span></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>-forge</span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>频道，并安装</span><span
+class=SpellE><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>OpenMC</span></span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>：</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:136.5pt;mso-para-margin-left:13.0gd;
+line-height:20.0pt;mso-line-height-rule:exactly'><span class=SpellE><span
+class=GramE><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+color:#7030A0;background:white'>conda</span></span></span><span class=GramE><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+color:#7030A0;background:white'><span style='mso-spacerun:yes'>&nbsp;
+</span>config</span></span><span lang=EN-US style='font-size:12.0pt;font-family:
+"Times New Roman",serif;color:#0070C0;background:white'> </span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+color:black;mso-themecolor:text1;background:white'>-</span><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif'>-add<span
+style='mso-spacerun:yes'>&nbsp; </span>channels<span
+style='mso-spacerun:yes'>&nbsp; </span><span class=SpellE>conda</span>-forge<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:136.5pt;mso-para-margin-left:13.0gd;
+line-height:20.0pt;mso-line-height-rule:exactly'><span class=SpellE><span
+class=GramE><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+color:#7030A0;background:white'>conda</span></span></span><span class=GramE><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+color:#7030A0;background:white'><span style='mso-spacerun:yes'>&nbsp;
+</span>install</span></span><span lang=EN-US style='font-size:12.0pt;
+font-family:"Times New Roman",serif;color:#7030A0;background:white'> </span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'><span
+style='mso-spacerun:yes'>&nbsp;</span><span class=SpellE>openmc</span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:20.0pt;mso-line-height-rule:exactly'><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>如需下载其他版本，可参考如下指令，图</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>3.2</span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>显示</span><span
+class=SpellE><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>conda</span></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>-forge</span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>不同的</span><span
+class=SpellE><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>OpenMC</span></span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>版本：</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:136.5pt;mso-para-margin-left:13.0gd;
+line-height:20.0pt;mso-line-height-rule:exactly'><span class=SpellE><span
+class=GramE><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+color:#7030A0;background:white'>conda</span></span></span><span class=GramE><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+color:#7030A0;background:white'><span style='mso-spacerun:yes'>&nbsp;
+</span>search</span></span><span lang=EN-US style='font-size:12.0pt;font-family:
+"Times New Roman",serif;color:#7030A0;background:white'> </span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'><span
+style='mso-spacerun:yes'>&nbsp;</span><span class=SpellE>openmc</span><span
+style='mso-spacerun:yes'>&nbsp; </span>--channel<span
+style='mso-spacerun:yes'>&nbsp; </span><span class=SpellE>conda</span>-forge<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:136.5pt;mso-para-margin-left:13.0gd;
+line-height:20.0pt;mso-line-height-rule:exactly'><!--[if gte vml 1]><o:wrapblock><v:shapetype
+  id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+  path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+  <v:stroke joinstyle="miter"/>
+  <v:formulas>
+   <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+   <v:f eqn="sum @0 1 0"/>
+   <v:f eqn="sum 0 0 @1"/>
+   <v:f eqn="prod @2 1 2"/>
+   <v:f eqn="prod @3 21600 pixelWidth"/>
+   <v:f eqn="prod @3 21600 pixelHeight"/>
+   <v:f eqn="sum @0 0 1"/>
+   <v:f eqn="prod @6 1 2"/>
+   <v:f eqn="prod @7 21600 pixelWidth"/>
+   <v:f eqn="sum @8 21600 0"/>
+   <v:f eqn="prod @7 21600 pixelHeight"/>
+   <v:f eqn="sum @10 21600 0"/>
+  </v:formulas>
+  <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+  <o:lock v:ext="edit" aspectratio="t"/>
+ </v:shapetype><v:shape id="图片_x0020_43" o:spid="_x0000_s1037" type="#_x0000_t75"
+  alt="图片包含 屏幕截图&#10;&#10;描述已自动生成" style='position:absolute;left:0;
+  text-align:left;margin-left:0;margin-top:27.1pt;width:342.75pt;height:223.35pt;
+  z-index:251663360;visibility:visible;mso-wrap-style:square;
+  mso-width-percent:0;mso-height-percent:0;mso-wrap-distance-left:9pt;
+  mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;
+  mso-wrap-distance-bottom:0;mso-position-horizontal:center;
+  mso-position-horizontal-relative:margin;mso-position-vertical:absolute;
+  mso-position-vertical-relative:text;mso-width-percent:0;mso-height-percent:0;
+  mso-width-relative:page;mso-height-relative:page'>
+  <v:imagedata src="OpenMC程序的编译与安装.files/image001.jpg" o:title="图片包含 屏幕截图&#10;&#10;描述已自动生成"/>
+  <w:wrap type="topAndBottom" anchorx="margin"/>
+ </v:shape><![endif]--><![if !vml]><img width=457 height=298
+ src="OpenMC程序的编译与安装.files/image002.jpg" alt="图片包含 屏幕截图&#10;&#10;描述已自动生成"
+ v:shapes="图片_x0020_43"><![endif]><!--[if gte vml 1]></o:wrapblock><![endif]--><br
+style='mso-ignore:vglayout' clear=ALL>
+<span class=SpellE><span class=GramE><span lang=EN-US style='font-size:12.0pt;
+font-family:"Times New Roman",serif;color:#7030A0;background:white'>conda</span></span></span><span
+class=GramE><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+color:#7030A0;background:white'><span style='mso-spacerun:yes'>&nbsp;
+</span>install</span></span><span lang=EN-US style='font-size:12.0pt;
+font-family:"Times New Roman",serif;color:#7030A0;background:white'> </span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'><span
+style='mso-spacerun:yes'>&nbsp;</span><span class=SpellE>openmc</span> =0.10.0=
+py37h1b5bbce_1002<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:20.0pt;
+mso-line-height-rule:exactly'><!--[if gte vml 1]><o:wrapblock><v:shape id="图片_x0020_2"
+  o:spid="_x0000_s1036" type="#_x0000_t75" alt="图片包含 屏幕截图&#10;&#10;描述已自动生成"
+  style='position:absolute;left:0;text-align:left;margin-left:0;margin-top:254.85pt;
+  width:382.4pt;height:251.3pt;z-index:-251649024;visibility:visible;
+  mso-wrap-style:square;mso-width-percent:0;mso-height-percent:0;
+  mso-wrap-distance-left:9pt;mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;
+  mso-wrap-distance-bottom:0;mso-position-horizontal:center;
+  mso-position-horizontal-relative:margin;mso-position-vertical:absolute;
+  mso-position-vertical-relative:text;mso-width-percent:0;mso-height-percent:0;
+  mso-width-relative:page;mso-height-relative:page'>
+  <v:imagedata src="OpenMC程序的编译与安装.files/image003.png" o:title="图片包含 屏幕截图&#10;&#10;描述已自动生成"/>
+  <w:wrap type="topAndBottom" anchorx="margin"/>
+ </v:shape><![endif]--><![if !vml]><img width=510 height=335
+ src="OpenMC程序的编译与安装.files/image004.png" alt="图片包含 屏幕截图&#10;&#10;描述已自动生成"
+ v:shapes="图片_x0020_2"><![endif]><!--[if gte vml 1]></o:wrapblock><![endif]--><br
+style='mso-ignore:vglayout' clear=ALL>
+<b style='mso-bidi-font-weight:normal'><span style='mso-bidi-font-size:10.5pt;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black;mso-themecolor:text1'>图</span></b><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='mso-bidi-font-size:
+10.5pt;font-family:"Times New Roman",serif;color:black;mso-themecolor:text1'>3.1.
+</span></b><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+style='mso-bidi-font-size:10.5pt;font-family:"Times New Roman",serif'>Anaconda</span></b><b
+style='mso-bidi-font-weight:normal'><span style='mso-bidi-font-size:10.5pt;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>的安装步骤</span></b><b style='mso-bidi-font-weight:
+normal'><span lang=EN-US style='mso-bidi-font-size:10.5pt;font-family:"Times New Roman",serif'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:20.0pt;
+mso-line-height-rule:exactly'><b style='mso-bidi-font-weight:normal'><span
+style='mso-bidi-font-size:10.5pt;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black;mso-themecolor:text1'>图</span></b><b style='mso-bidi-font-weight:
+normal'><span lang=EN-US style='mso-bidi-font-size:10.5pt;font-family:"Times New Roman",serif;
+color:black;mso-themecolor:text1'>3.2. </span></b><b style='mso-bidi-font-weight:
+normal'><span style='mso-bidi-font-size:10.5pt;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black;mso-themecolor:text1'>查阅</span></b><span class=SpellE><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='mso-bidi-font-size:
+10.5pt;font-family:"Times New Roman",serif'>conda</span></b></span><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='mso-bidi-font-size:
+10.5pt;font-family:"Times New Roman",serif'>-forge</span></b><b
+style='mso-bidi-font-weight:normal'><span style='mso-bidi-font-size:10.5pt;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>不同的</span></b><span class=SpellE><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='mso-bidi-font-size:
+10.5pt;font-family:"Times New Roman",serif'>OpenMC</span></b></span><b
+style='mso-bidi-font-weight:normal'><span style='mso-bidi-font-size:10.5pt;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>版本</span></b><b style='mso-bidi-font-weight:
+normal'><span lang=EN-US style='mso-bidi-font-size:10.5pt;font-family:"Times New Roman",serif'><o:p></o:p></span></b></p>
+
+<h3 style='margin-left:8.2pt;text-indent:0cm;line-height:20.0pt;mso-line-height-rule:
+exactly;mso-list:l3 level1 lfo4'><![if !supportLists]><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+"Times New Roman"'><span style='mso-list:Ignore'>3.1.2<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:12.0pt;font-family:黑体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>源码安装方法</span><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+黑体'><o:p></o:p></span></h3>
+
+<p class=MsoNormal style='text-indent:24.0pt;mso-char-indent-count:2.0;
+line-height:20.0pt;mso-line-height-rule:exactly'><span class=SpellE><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>OpenMC</span></span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>源码编译前，需安装编译工具：</span><span
+class=SpellE><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>fortran</span></span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>、</span><span
+class=SpellE><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>c++</span></span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>、</span><span
+class=SpellE><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>CMake</span></span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>，还有</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>git</span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>工具。同时，因前面提过</span><span
+class=SpellE><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>OpenMC</span></span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>处理数据需借助</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>Python</span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>，因此需要有</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>Python</span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>环境，即安装</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>Anaconda</span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>。</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:20.0pt;mso-line-height-rule:exactly'><!--[if gte vml 1]><o:wrapblock><v:shape
+  id="图片_x0020_45" o:spid="_x0000_s1035" type="#_x0000_t75" style='position:absolute;
+  left:0;text-align:left;margin-left:0;margin-top:49.4pt;width:408.9pt;
+  height:254.65pt;z-index:251668480;visibility:visible;mso-wrap-style:square;
+  mso-width-percent:0;mso-height-percent:0;mso-wrap-distance-left:9pt;
+  mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;
+  mso-wrap-distance-bottom:0;mso-position-horizontal:center;
+  mso-position-horizontal-relative:margin;mso-position-vertical:absolute;
+  mso-position-vertical-relative:text;mso-width-percent:0;mso-height-percent:0;
+  mso-width-relative:page;mso-height-relative:page'>
+  <v:imagedata src="OpenMC程序的编译与安装.files/image005.png" o:title=""/>
+  <w:wrap type="topAndBottom" anchorx="margin"/>
+ </v:shape><![endif]--><![if !vml]><img width=545 height=340
+ src="OpenMC程序的编译与安装.files/image006.png" v:shapes="图片_x0020_45"><![endif]><!--[if gte vml 1]></o:wrapblock><![endif]--><br
+style='mso-ignore:vglayout' clear=ALL>
+<span style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman"'>注意：</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>Anaconda</span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>版本选择</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>anaconda3-5.1.0-Linux-x86_64.sh</span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>，该版本自带</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>hdf5=1.10.1</span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>，可避免图</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>3.3</span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>出现的错误，<span
+class=GramE>如需高版本</span></span><span lang=EN-US style='font-size:12.0pt;
+font-family:"Times New Roman",serif'>hdf5</span><span style='font-size:12.0pt;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>，请按照提示修改源码。</span><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:20.0pt;
+mso-line-height-rule:exactly'><b style='mso-bidi-font-weight:normal'><span
+style='mso-bidi-font-size:10.5pt;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black;mso-themecolor:text1'>图</span></b><b style='mso-bidi-font-weight:
+normal'><span lang=EN-US style='mso-bidi-font-size:10.5pt;font-family:"Times New Roman",serif;
+color:black;mso-themecolor:text1'>3.3. Hdf5 version &gt;1.10.1</span></b><b
+style='mso-bidi-font-weight:normal'><span style='mso-bidi-font-size:10.5pt;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black;mso-themecolor:text1'>的</span></b><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='mso-bidi-font-size:
+10.5pt;font-family:"Times New Roman",serif'> <span class=SpellE>OpenMC</span></span></b><b
+style='mso-bidi-font-weight:normal'><span style='mso-bidi-font-size:10.5pt;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>运行错误</span></b><span lang=EN-US
+style='mso-bidi-font-size:10.5pt;font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:24.0pt;mso-char-indent-count:2.0;
+line-height:20.0pt;mso-line-height-rule:exactly'><span style='font-size:12.0pt;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>下面进行安装演示：</span><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:20.0pt;mso-line-height-rule:exactly'><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>第一步，安装</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>anaconda3-5.1.0-Linux-x86_64.sh</span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>的</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>Anaconda</span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>，</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:20.0pt;mso-line-height-rule:exactly'><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>第二步，安装</span><span
+class=SpellE><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>fortran</span></span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>、</span><span
+class=SpellE><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>c++</span></span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>、</span><span
+class=SpellE><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>CMake</span></span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>和</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>git</span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>：</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:20.0pt;
+mso-line-height-rule:exactly'><span class=SpellE><span class=GramE><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>sudo</span></span></span><span
+class=GramE><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>
+<span style='mso-spacerun:yes'>&nbsp;</span><span style='color:#7030A0;
+background:white'>apt</span></span></span><span lang=EN-US style='font-size:
+12.0pt;font-family:"Times New Roman",serif;color:#7030A0;background:white'> <span
+style='mso-spacerun:yes'>&nbsp;</span>install</span><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif'> <span
+style='mso-spacerun:yes'>&nbsp;</span><span class=SpellE>gfortran</span> <span
+style='mso-spacerun:yes'>&nbsp;</span>g++ <span
+style='mso-spacerun:yes'>&nbsp;</span><span class=SpellE>cmake</span><span
+style='mso-spacerun:yes'>&nbsp; </span>git<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:20.0pt;mso-line-height-rule:exactly'><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>第三步，</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>clone</span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>源码，进行编译与安装，图</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>3.4 </span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>显示</span><span
+class=SpellE><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>OpenMC</span></span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>已安装成功。注意：</span><span
+class=SpellE><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>OpenMC</span></span><span
+class=GramE><span style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman"'>官网有稳定版</span></span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>和开发版，二者代码有点出入，本文选择稳定版：</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:84.0pt;mso-para-margin-left:8.0gd;
+line-height:20.0pt;mso-line-height-rule:exactly'><span class=GramE><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+color:#7030A0;background:white'>git <span
+style='mso-spacerun:yes'>&nbsp;</span>clone</span></span><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif;color:#7030A0;
+background:white'> </span><span lang=EN-US style='font-size:12.0pt;font-family:
+"Times New Roman",serif'><span style='mso-spacerun:yes'>&nbsp;</span></span><span
+lang=EN-US><a href="https://github.com/mit-crpg/openmc.git"><span
+style='font-size:12.0pt;font-family:"Times New Roman",serif;color:windowtext;
+text-decoration:none;text-underline:none'>https://github.com/mit-crpg/openmc.git</span></a></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'><span
+style='mso-spacerun:yes'>&nbsp;&nbsp; </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:84.0pt;mso-para-margin-left:8.0gd;
+line-height:20.0pt;mso-line-height-rule:exactly'><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif;color:#7030A0;
+background:white'>cd <span style='mso-spacerun:yes'>&nbsp;</span></span><span
+class=SpellE><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>openmc</span></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'><span
+style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style='mso-spacerun:yes'>&nbsp;</span></span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>进入这个目录</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:84.0pt;mso-para-margin-left:8.0gd;
+line-height:20.0pt;mso-line-height-rule:exactly'><span class=GramE><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+color:#7030A0;background:white'>pip </span><span lang=EN-US style='font-size:
+12.0pt;font-family:"Times New Roman",serif;color:#0070C0;background:white'><span
+style='mso-spacerun:yes'>&nbsp;</span></span><span lang=EN-US style='font-size:
+12.0pt;font-family:"Times New Roman",serif'>install</span></span><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='font-size:12.0pt;
+font-family:"Times New Roman",serif'> <span style='color:black;mso-themecolor:
+text1'>.</span></span></b><span lang=EN-US style='font-size:12.0pt;font-family:
+"Times New Roman",serif;color:black;mso-themecolor:text1'> </span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'><span
+style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+style='mso-spacerun:yes'>&nbsp;</span><span
+style='mso-spacerun:yes'>&nbsp;&nbsp;</span></span><span style='font-size:12.0pt;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>安装</span><span class=SpellE><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>OpenMC</span></span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>的</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>Python</span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>模块</span><span
+style='font-size:12.0pt;font-family:"Times New Roman",serif'> <span lang=EN-US><o:p></o:p></span></span></p>
+
+<p class=MsoNormal style='margin-left:84.0pt;mso-para-margin-left:8.0gd;
+line-height:20.0pt;mso-line-height-rule:exactly'><span class=SpellE><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+color:#7030A0;background:white'>mkdir</span></span><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif;color:#7030A0;
+background:white'> </span><span lang=EN-US style='font-size:12.0pt;font-family:
+"Times New Roman",serif'><span style='mso-spacerun:yes'>&nbsp;</span>build <span
+style='mso-spacerun:yes'>&nbsp;</span>&amp;&amp;<span style='color:#7030A0;
+background:white'> cd</span><span style='color:#0070C0;background:white'> </span><span
+style='color:#7030A0;background:white'><span
+style='mso-spacerun:yes'>&nbsp;</span></span>build<span
+style='mso-spacerun:yes'>&nbsp; </span><span
+style='mso-spacerun:yes'>&nbsp;</span></span><span style='font-size:12.0pt;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>创建并进入</span><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif'>build</span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>目录</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:84.0pt;mso-para-margin-left:8.0gd;
+line-height:20.0pt;mso-line-height-rule:exactly'><span class=SpellE><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+color:#7030A0;background:white'>cmake</span></span><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif;color:#7030A0;
+background:white'> </span><span class=GramE><span lang=EN-US style='font-size:
+12.0pt;font-family:"Times New Roman",serif;color:black;mso-themecolor:text1;
+background:white'><span style='mso-spacerun:yes'>&nbsp;</span><b
+style='mso-bidi-font-weight:normal'>..</b></span></span><b style='mso-bidi-font-weight:
+normal'><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+color:#0070C0;background:white'> </span></b><span lang=EN-US style='font-size:
+12.0pt;font-family:"Times New Roman",serif'><span
+style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+style='mso-spacerun:yes'>&nbsp;&nbsp;</span><span
+style='mso-spacerun:yes'>&nbsp;</span><span class=SpellE>CMake</span></span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>搭建编译环境</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:84.0pt;mso-para-margin-left:8.0gd;
+line-height:20.0pt;mso-line-height-rule:exactly'><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif;color:#7030A0;
+background:white'>make<span style='mso-spacerun:yes'>&nbsp; </span></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'><span
+style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;</span></span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>编译</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:84.0pt;mso-para-margin-left:8.0gd;
+line-height:20.0pt;mso-line-height-rule:exactly'><!--[if gte vml 1]><o:wrapblock><v:shape
+  id="图片_x0020_46" o:spid="_x0000_s1034" type="#_x0000_t75" alt="图片包含 文字&#10;&#10;描述已自动生成"
+  style='position:absolute;left:0;text-align:left;margin-left:0;margin-top:24.95pt;
+  width:456.4pt;height:76.5pt;z-index:251669504;visibility:visible;
+  mso-wrap-style:square;mso-width-percent:0;mso-height-percent:0;
+  mso-wrap-distance-left:9pt;mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;
+  mso-wrap-distance-bottom:0;mso-position-horizontal:center;
+  mso-position-horizontal-relative:margin;mso-position-vertical:absolute;
+  mso-position-vertical-relative:text;mso-width-percent:0;mso-height-percent:0;
+  mso-width-relative:page;mso-height-relative:page'>
+  <v:imagedata src="OpenMC程序的编译与安装.files/image007.png" o:title="图片包含 文字&#10;&#10;描述已自动生成"/>
+  <w:wrap type="topAndBottom" anchorx="margin"/>
+ </v:shape><![endif]--><![if !vml]><img width=609 height=102
+ src="OpenMC程序的编译与安装.files/image008.png" alt="图片包含 文字&#10;&#10;描述已自动生成" v:shapes="图片_x0020_46"><![endif]><!--[if gte vml 1]></o:wrapblock><![endif]--><br
+style='mso-ignore:vglayout' clear=ALL>
+<span class=SpellE><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>sudo</span></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'> <span
+style='mso-spacerun:yes'>&nbsp;</span><span style='color:#7030A0;background:
+white'>make</span><span style='color:#0070C0;background:white'> </span><span
+style='mso-spacerun:yes'>&nbsp;</span>install<span
+style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman"'>安装</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'> <span
+class=SpellE>OpenMC</span><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:20.0pt;
+mso-line-height-rule:exactly'><b style='mso-bidi-font-weight:normal'><span
+style='mso-bidi-font-size:10.5pt;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black;mso-themecolor:text1'>图</span></b><b style='mso-bidi-font-weight:
+normal'><span lang=EN-US style='mso-bidi-font-size:10.5pt;font-family:"Times New Roman",serif;
+color:black;mso-themecolor:text1'>3.4. </span></b><span class=SpellE><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='mso-bidi-font-size:
+10.5pt;font-family:"Times New Roman",serif'>OpenMC</span></b></span><b
+style='mso-bidi-font-weight:normal'><span style='mso-bidi-font-size:10.5pt;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>程序运行后，报</span></b><b style='mso-bidi-font-weight:
+normal'><span lang=EN-US style='mso-bidi-font-size:10.5pt;font-family:"Times New Roman",serif'>“</span></b><b
+style='mso-bidi-font-weight:normal'><span style='mso-bidi-font-size:10.5pt;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>缺少输入卡错误</span></b><b style='mso-bidi-font-weight:
+normal'><span lang=EN-US style='mso-bidi-font-size:10.5pt;font-family:"Times New Roman",serif'>”</span></b><span
+lang=EN-US style='mso-bidi-font-size:10.5pt;font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<h2 style='margin-left:8.2pt;text-indent:0cm;line-height:20.0pt;mso-line-height-rule:
+exactly;mso-list:l4 level1 lfo3'><a name="_Toc9524606"></a><a name="_Toc9429014"></a><a
+name="_Toc9428974"></a><a name="_Toc9428936"></a><a name="_Toc9416067"><span
+style='mso-bookmark:_Toc9428936'><span style='mso-bookmark:_Toc9428974'><span
+style='mso-bookmark:_Toc9429014'><span style='mso-bookmark:_Toc9524606'><![if !supportLists]><span
+class=mw-headline><span lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'><span style='mso-list:Ignore'>3.2<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></span><![endif]><span class=mw-headline><span
+style='font-size:14.0pt;font-family:黑体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman"'>数据库安装方法</span></span></span></span></span></span></a><span
+style='mso-bookmark:_Toc9524606'></span><span style='mso-bookmark:_Toc9429014'></span><span
+style='mso-bookmark:_Toc9428974'></span><span style='mso-bookmark:_Toc9428936'></span><span
+style='mso-bookmark:_Toc9416067'></span><span class=mw-headline><span
+lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:黑体'><o:p></o:p></span></span></h2>
+
+<p class=MsoNormal style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:20.0pt;mso-line-height-rule:exactly'><!--[if gte vml 1]><o:wrapblock><v:shape
+  id="图片_x0020_49" o:spid="_x0000_s1033" type="#_x0000_t75" alt="图片包含 屏幕截图&#10;&#10;描述已自动生成"
+  style='position:absolute;left:0;text-align:left;margin-left:0;margin-top:105.05pt;
+  width:335.25pt;height:223.75pt;z-index:251666432;visibility:visible;
+  mso-wrap-style:square;mso-width-percent:0;mso-height-percent:0;
+  mso-wrap-distance-left:9pt;mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;
+  mso-wrap-distance-bottom:0;mso-position-horizontal:center;
+  mso-position-horizontal-relative:margin;mso-position-vertical:absolute;
+  mso-position-vertical-relative:text;mso-width-percent:0;mso-height-percent:0;
+  mso-width-relative:page;mso-height-relative:page'>
+  <v:imagedata src="OpenMC程序的编译与安装.files/image009.png" o:title="图片包含 屏幕截图&#10;&#10;描述已自动生成"/>
+  <w:wrap type="topAndBottom" anchorx="margin"/>
+ </v:shape><![endif]--><![if !vml]><img width=447 height=298
+ src="OpenMC程序的编译与安装.files/image010.png" alt="图片包含 屏幕截图&#10;&#10;描述已自动生成"
+ v:shapes="图片_x0020_49"><![endif]><!--[if gte vml 1]></o:wrapblock><![endif]--><br
+style='mso-ignore:vglayout' clear=ALL>
+<span style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman"'>为了能够运行</span><span
+class=SpellE><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>OpenMC</span></span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>，<span class=GramE>需拥有</span>横截面数据库（</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>cross
+sections</span><span style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman"'>）。</span><span
+class=SpellE><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>OpenMC</span></span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>采用</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>HDF5</span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>格式储存核数据。注意：由于开发人员保罗在</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>2019</span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>年</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>1</span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>月份对程序源码做了修改，获取核数据库的脚本被放置</span><span
+class=SpellE><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>Github</span></span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>的</span><span
+class=SpellE><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>openmc</span></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>-dev/data</span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>仓库里，如图</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>3.5</span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>所示，若采用源码安装</span><span
+class=SpellE><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>OpenMC</span></span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>，可考虑下载脚本获取截面库数据。假如拥有</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>ACE</span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>格式的数据文件，可使用</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>openmc-ace-to-hdf5</span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>指令其转化为</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>.h5</span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>的</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>hdf5</span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>格式文件。</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:20.0pt;
+mso-line-height-rule:exactly'><b style='mso-bidi-font-weight:normal'><span
+style='mso-bidi-font-size:10.5pt;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black;mso-themecolor:text1'>图</span></b><b style='mso-bidi-font-weight:
+normal'><span lang=EN-US style='mso-bidi-font-size:10.5pt;font-family:"Times New Roman",serif;
+color:black;mso-themecolor:text1'>3.5. </span></b><span class=SpellE><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='mso-bidi-font-size:
+10.5pt;font-family:"Times New Roman",serif'>openmc</span></b></span><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='mso-bidi-font-size:
+10.5pt;font-family:"Times New Roman",serif'>-dev/data</span></b><b
+style='mso-bidi-font-weight:normal'><span style='mso-bidi-font-size:10.5pt;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>脚本仓库</span></b><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<h3 style='margin-left:8.2pt;text-indent:0cm;line-height:20.0pt;mso-line-height-rule:
+exactly;mso-list:l0 level1 lfo5'><![if !supportLists]><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+"Times New Roman"'><span style='mso-list:Ignore'>3.2.1<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:12.0pt;font-family:黑体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>数据库版本</span><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+黑体'><o:p></o:p></span></h3>
+
+<p class=MsoNormal style='text-indent:24.0pt;mso-char-indent-count:2.0;
+line-height:20.0pt;mso-line-height-rule:exactly'><span style='font-size:12.0pt;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>当核数据的版本与</span><span class=SpellE><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>OpenMC</span></span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>程序版本不匹配时，可能出现图</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>3.6<b
+style='mso-bidi-font-weight:normal'> </b></span><span style='font-size:12.0pt;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>的错误提示：“</span><span class=SpellE><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>OpenMC</span></span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>需要</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>v2</span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>版的数据，但</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>HDF5</span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>数据格式是</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>v1</span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>版”，或者意思相反。这是因为</span><span
+class=SpellE><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>OpenMC</span></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>(0.10.0)</span><span
+class=GramE><span style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman"'>刚发布</span></span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>时，代码未拥有光子输运的功能，之后开发团队在</span><span
+class=SpellE><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>Github</span></span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>上开发新的代码完善这一功能，然而存放在</span><span
+class=SpellE><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>conda-forg</span></span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>的</span><span
+class=SpellE><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>OpenMC</span></span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>代码，开发团队未进行代码升级。所以</span><a
+name="_Hlk8327064"></a><span class=SpellE><span style='mso-bookmark:_Hlk8327064'><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>OpenMC</span></span></span><span
+style='mso-bookmark:_Hlk8327064'><span style='font-size:12.0pt;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>（</span></span><span style='mso-bookmark:_Hlk8327064'><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>0.10.0</span></span><span
+style='mso-bookmark:_Hlk8327064'><span style='font-size:12.0pt;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>）具有两个版本，不支持光子输运的为</span></span><span style='mso-bookmark:
+_Hlk8327064'><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>v1</span></span><span
+style='mso-bookmark:_Hlk8327064'><span style='font-size:12.0pt;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>版，支持的为</span></span><span style='mso-bookmark:_Hlk8327064'><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>v2</span></span><span
+style='mso-bookmark:_Hlk8327064'><span style='font-size:12.0pt;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>版</span></span><span style='font-size:12.0pt;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>。一般从</span><span class=SpellE><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif'>conda-forg</span></span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>安装的（</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>0.10.0</span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>）版本是</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>v1</span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>版，因此需要</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>v1</span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>版的核数据；选</span><!--[if gte vml 1]><o:wrapblock><v:shape
+  id="图片_x0020_50" o:spid="_x0000_s1032" type="#_x0000_t75" alt="图片包含 屏幕截图, 文字&#10;&#10;描述已自动生成"
+  style='position:absolute;left:0;text-align:left;margin-left:2.45pt;
+  margin-top:86.5pt;width:450.75pt;height:190.25pt;z-index:251664384;
+  visibility:visible;mso-wrap-style:square;mso-width-percent:0;
+  mso-height-percent:0;mso-wrap-distance-left:9pt;mso-wrap-distance-top:0;
+  mso-wrap-distance-right:9pt;mso-wrap-distance-bottom:0;
+  mso-position-horizontal:absolute;mso-position-horizontal-relative:margin;
+  mso-position-vertical:absolute;mso-position-vertical-relative:text;
+  mso-width-percent:0;mso-height-percent:0;mso-width-relative:page;
+  mso-height-relative:page'>
+  <v:imagedata src="OpenMC程序的编译与安装.files/image011.png" o:title="图片包含 屏幕截图, 文字&#10;&#10;描述已自动生成"/>
+  <w:wrap type="topAndBottom" anchorx="margin"/>
+ </v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout'>
+ <table cellpadding=0 cellspacing=0>
+  <tr>
+   <td width=3 height=0></td>
+  </tr>
+  <tr>
+   <td></td>
+   <td><img width=601 height=254 src="OpenMC程序的编译与安装.files/image012.png"
+   alt="图片包含 屏幕截图, 文字&#10;&#10;描述已自动生成" v:shapes="图片_x0020_50"></td>
+  </tr>
+ </table>
+ </span><![endif]><!--[if gte vml 1]></o:wrapblock><![endif]--><br
+style='mso-ignore:vglayout' clear=ALL>
+<span style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman"'>则源码编译、安装，需要</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>v2</span><span
+class=GramE><span style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman"'>版核数据</span></span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>。具体原因，请看图</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>3.7</span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>保罗的解释</span><sup><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>[24]</span></sup><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>。</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:20.0pt;
+mso-line-height-rule:exactly'><!--[if gte vml 1]><o:wrapblock><v:shape id="图片_x0020_48"
+  o:spid="_x0000_s1031" type="#_x0000_t75" alt="图片包含 屏幕截图&#10;&#10;描述已自动生成"
+  style='position:absolute;left:0;text-align:left;margin-left:0;margin-top:217.25pt;
+  width:467.25pt;height:125.25pt;z-index:251665408;visibility:visible;
+  mso-wrap-style:square;mso-width-percent:0;mso-height-percent:0;
+  mso-wrap-distance-left:9pt;mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;
+  mso-wrap-distance-bottom:0;mso-position-horizontal:center;
+  mso-position-horizontal-relative:margin;mso-position-vertical:absolute;
+  mso-position-vertical-relative:text;mso-width-percent:0;mso-height-percent:0;
+  mso-width-relative:page;mso-height-relative:page'>
+  <v:imagedata src="OpenMC程序的编译与安装.files/image013.png" o:title="图片包含 屏幕截图&#10;&#10;描述已自动生成"
+   cropbottom="26448f"/>
+  <w:wrap type="topAndBottom" anchorx="margin"/>
+ </v:shape><![endif]--><![if !vml]><img width=623 height=167
+ src="OpenMC程序的编译与安装.files/image014.png" alt="图片包含 屏幕截图&#10;&#10;描述已自动生成"
+ v:shapes="图片_x0020_48"><![endif]><!--[if gte vml 1]></o:wrapblock><![endif]--><br
+style='mso-ignore:vglayout' clear=ALL>
+<b style='mso-bidi-font-weight:normal'><span style='mso-bidi-font-size:10.5pt;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black;mso-themecolor:text1'>图</span></b><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='mso-bidi-font-size:
+10.5pt;font-family:"Times New Roman",serif;color:black;mso-themecolor:text1'>3.6.
+</span></b><b style='mso-bidi-font-weight:normal'><span style='mso-bidi-font-size:
+10.5pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black;mso-themecolor:text1'>核数据版本不匹配</span></b><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='mso-bidi-font-size:
+10.5pt;font-family:"Times New Roman",serif;color:black;mso-themecolor:text1'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:20.0pt;
+mso-line-height-rule:exactly'><b style='mso-bidi-font-weight:normal'><span
+style='mso-bidi-font-size:10.5pt;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black;mso-themecolor:text1'>图</span></b><b style='mso-bidi-font-weight:
+normal'><span lang=EN-US style='mso-bidi-font-size:10.5pt;font-family:"Times New Roman",serif;
+color:black;mso-themecolor:text1'>3.7. v1</span></b><b style='mso-bidi-font-weight:
+normal'><span style='mso-bidi-font-size:10.5pt;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black;mso-themecolor:text1'>与</span></b><b style='mso-bidi-font-weight:
+normal'><span lang=EN-US style='mso-bidi-font-size:10.5pt;font-family:"Times New Roman",serif;
+color:black;mso-themecolor:text1'>v2</span></b><b style='mso-bidi-font-weight:
+normal'><span style='mso-bidi-font-size:10.5pt;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black;mso-themecolor:text1'>版解释</span></b><b style='mso-bidi-font-weight:
+normal'><span lang=EN-US style='mso-bidi-font-size:10.5pt;font-family:"Times New Roman",serif;
+color:black;mso-themecolor:text1'><o:p></o:p></span></b></p>
+
+<h3 style='margin-left:8.2pt;text-indent:0cm;line-height:20.0pt;mso-line-height-rule:
+exactly;mso-list:l0 level1 lfo5'><![if !supportLists]><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+"Times New Roman"'><span style='mso-list:Ignore'>3.2.2<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=EN-US style='font-size:12.0pt;
+font-family:"Times New Roman",serif;mso-fareast-font-family:黑体'>ENDF/B-VII.1</span><span
+style='font-size:12.0pt;font-family:黑体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman"'>数据库</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:黑体'><o:p></o:p></span></h3>
+
+<p class=MsoListParagraph style='margin-left:21.0pt;text-indent:24.0pt;
+line-height:20.0pt;mso-line-height-rule:exactly'><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+"等线 Light";mso-fareast-theme-font:major-fareast;mso-bidi-font-weight:bold'>ENDF
+/ B-VII.1</span><span style='font-size:12.0pt;font-family:"等线 Light";
+mso-ascii-font-family:"Times New Roman";mso-fareast-theme-font:major-fareast;
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+mso-bidi-font-weight:bold'>是由美国的</span><span lang=EN-US style='font-size:12.0pt;
+font-family:"Times New Roman",serif;mso-fareast-font-family:"等线 Light";
+mso-fareast-theme-font:major-fareast;mso-bidi-font-weight:bold'>NNDC <sup>[25]</sup></span><span
+style='font-size:12.0pt;font-family:"等线 Light";mso-ascii-font-family:"Times New Roman";
+mso-fareast-theme-font:major-fareast;mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";mso-bidi-font-weight:bold'>（</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"等线 Light";mso-fareast-theme-font:major-fareast;
+mso-bidi-font-weight:bold'>National Nuclear Data Center</span><span
+style='font-size:12.0pt;font-family:"等线 Light";mso-ascii-font-family:"Times New Roman";
+mso-fareast-theme-font:major-fareast;mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";mso-bidi-font-weight:bold'>）研究中心制作，该库含有中子反应和热散射库，其中中子反应库仅在</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"等线 Light";mso-fareast-theme-font:major-fareast;
+mso-bidi-font-weight:bold'>293.6k</span><span style='font-size:12.0pt;
+font-family:"等线 Light";mso-ascii-font-family:"Times New Roman";mso-fareast-theme-font:
+major-fareast;mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";mso-bidi-font-weight:bold'>的温度下生成，而热散射库生成范围在</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"等线 Light";mso-fareast-theme-font:major-fareast;
+mso-bidi-font-weight:bold'>19k-296k</span><span style='font-size:12.0pt;
+font-family:"等线 Light";mso-ascii-font-family:"Times New Roman";mso-fareast-theme-font:
+major-fareast;mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";mso-bidi-font-weight:bold'>，因此反应材料温度若大于</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"等线 Light";mso-fareast-theme-font:major-fareast;
+mso-bidi-font-weight:bold'>320k</span><span style='font-size:12.0pt;font-family:
+"等线 Light";mso-ascii-font-family:"Times New Roman";mso-fareast-theme-font:major-fareast;
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+mso-bidi-font-weight:bold'>，则不能使用该截面库。</span><span lang=EN-US style='font-size:
+12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:"等线 Light";
+mso-fareast-theme-font:major-fareast;mso-bidi-font-weight:bold'><o:p></o:p></span></p>
+
+<h4 style='margin-left:8.2pt;text-indent:0cm;line-height:20.0pt;mso-line-height-rule:
+exactly;mso-list:l1 level1 lfo6'><![if !supportLists]><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+"Times New Roman"'><span style='mso-list:Ignore'>3.2.2.1<span style='font:7.0pt "Times New Roman"'>
+</span></span></span><![endif]><span lang=EN-US style='font-size:12.0pt;
+font-family:"Times New Roman",serif;mso-fareast-font-family:黑体'><span
+style='mso-spacerun:yes'>&nbsp;</span><span class=SpellE>Conda</span></span><span
+style='font-size:12.0pt;font-family:黑体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman"'>安装方法</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:黑体'><o:p></o:p></span></h4>
+
+<p class=MsoNormal style='text-indent:24.0pt;mso-char-indent-count:2.0;
+line-height:20.0pt;mso-line-height-rule:exactly'><span style='font-size:12.0pt;
+font-family:"等线 Light";mso-ascii-font-family:"Times New Roman";mso-fareast-theme-font:
+major-fareast;mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";mso-bidi-font-weight:bold'>注意：</span><span class=SpellE><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"等线 Light";mso-fareast-theme-font:major-fareast;
+mso-bidi-font-weight:bold'>conda-forg</span></span><span style='font-size:12.0pt;
+font-family:"等线 Light";mso-ascii-font-family:"Times New Roman";mso-fareast-theme-font:
+major-fareast;mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";mso-bidi-font-weight:bold'>的</span><span class=SpellE><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"等线 Light";mso-fareast-theme-font:major-fareast;
+mso-bidi-font-weight:bold'>OpenMC</span></span><span style='font-size:12.0pt;
+font-family:"等线 Light";mso-ascii-font-family:"Times New Roman";mso-fareast-theme-font:
+major-fareast;mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";mso-bidi-font-weight:bold'>为</span><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+"等线 Light";mso-fareast-theme-font:major-fareast;mso-bidi-font-weight:bold'>v1</span><span
+style='font-size:12.0pt;font-family:"等线 Light";mso-ascii-font-family:"Times New Roman";
+mso-fareast-theme-font:major-fareast;mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";mso-bidi-font-weight:bold'>版，获取</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"等线 Light";mso-fareast-theme-font:major-fareast;
+mso-bidi-font-weight:bold'>ENDF/B-VII.1</span><span style='font-size:12.0pt;
+font-family:"等线 Light";mso-ascii-font-family:"Times New Roman";mso-fareast-theme-font:
+major-fareast;mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";mso-bidi-font-weight:bold'>的脚本未删除，因此可直接获取：</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"等线 Light";mso-fareast-theme-font:major-fareast;
+mso-bidi-font-weight:bold'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:24.0pt;
+mso-char-indent-count:2.0;line-height:20.0pt;mso-line-height-rule:exactly'><span
+class=SpellE><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+color:#7030A0;background:white'>openmc</span></span><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif;color:#7030A0;
+background:white'>-get-<span class=SpellE>nndc</span>-data<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:24.0pt;mso-char-indent-count:2.0;
+line-height:20.0pt;mso-line-height-rule:exactly'><span style='font-size:12.0pt;
+font-family:"等线 Light";mso-ascii-font-family:"Times New Roman";mso-fareast-theme-font:
+major-fareast;mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";mso-bidi-font-weight:bold'>该指令会帮自动下载</span><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+"等线 Light";mso-fareast-theme-font:major-fareast;mso-bidi-font-weight:bold'>ENDF/B-VII.1</span><span
+style='font-size:12.0pt;font-family:"等线 Light";mso-ascii-font-family:"Times New Roman";
+mso-fareast-theme-font:major-fareast;mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";mso-bidi-font-weight:bold'>数据库，然后自动合成</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"等线 Light";mso-fareast-theme-font:major-fareast;
+mso-bidi-font-weight:bold'>hdf5</span><span style='font-size:12.0pt;font-family:
+"等线 Light";mso-ascii-font-family:"Times New Roman";mso-fareast-theme-font:major-fareast;
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+mso-bidi-font-weight:bold'>格式的文件库，时间可能</span><span lang=EN-US style='font-size:
+12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:"等线 Light";
+mso-fareast-theme-font:major-fareast;mso-bidi-font-weight:bold'>1</span><span
+style='font-size:12.0pt;font-family:"等线 Light";mso-ascii-font-family:"Times New Roman";
+mso-fareast-theme-font:major-fareast;mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";mso-bidi-font-weight:bold'>个小时。若不想浪费时间，可在保罗分享的链接如图</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"等线 Light";mso-fareast-theme-font:major-fareast;
+mso-bidi-font-weight:bold'>3.8</span><span style='font-size:12.0pt;font-family:
+"等线 Light";mso-ascii-font-family:"Times New Roman";mso-fareast-theme-font:major-fareast;
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+mso-bidi-font-weight:bold'>下载</span><span lang=EN-US style='font-size:12.0pt;
+font-family:"Times New Roman",serif;mso-fareast-font-family:"等线 Light";
+mso-fareast-theme-font:major-fareast;mso-bidi-font-weight:bold'>v1</span><span
+style='font-size:12.0pt;font-family:"等线 Light";mso-ascii-font-family:"Times New Roman";
+mso-fareast-theme-font:major-fareast;mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";mso-bidi-font-weight:bold'>版的</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"等线 Light";mso-fareast-theme-font:major-fareast;
+mso-bidi-font-weight:bold'>ENDF/BVII.1</span><span style='font-size:12.0pt;
+font-family:"等线 Light";mso-ascii-font-family:"Times New Roman";mso-fareast-theme-font:
+major-fareast;mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";mso-bidi-font-weight:bold'>数据库，打开需要代理：</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"等线 Light";mso-fareast-theme-font:major-fareast;
+mso-bidi-font-weight:bold'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:21.0pt;
+mso-char-indent-count:2.0;line-height:20.0pt;mso-line-height-rule:exactly'><!--[if gte vml 1]><o:wrapblock><v:shape
+  id="图片_x0020_51" o:spid="_x0000_s1030" type="#_x0000_t75" alt="图片包含 屏幕截图&#10;&#10;描述已自动生成"
+  style='position:absolute;left:0;text-align:left;margin-left:0;margin-top:30.65pt;
+  width:342.3pt;height:123.8pt;z-index:251670528;visibility:visible;
+  mso-wrap-style:square;mso-width-percent:0;mso-height-percent:0;
+  mso-wrap-distance-left:9pt;mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;
+  mso-wrap-distance-bottom:0;mso-position-horizontal:center;
+  mso-position-horizontal-relative:margin;mso-position-vertical:absolute;
+  mso-position-vertical-relative:text;mso-width-percent:0;mso-height-percent:0;
+  mso-width-relative:page;mso-height-relative:page'>
+  <v:imagedata src="OpenMC程序的编译与安装.files/image015.png" o:title="图片包含 屏幕截图&#10;&#10;描述已自动生成"/>
+  <w:wrap type="topAndBottom" anchorx="margin"/>
+ </v:shape><![endif]--><![if !vml]><img width=456 height=165
+ src="OpenMC程序的编译与安装.files/image016.png" alt="图片包含 屏幕截图&#10;&#10;描述已自动生成"
+ v:shapes="图片_x0020_51"><![endif]><!--[if gte vml 1]></o:wrapblock><![endif]--><br
+style='mso-ignore:vglayout' clear=ALL>
+<span lang=EN-US><a
+href="https://anl.app.box.com/s/a6sw2cep34wlz6b9i9jwiotaqoayxcxt"><span
+style='font-size:12.0pt;font-family:"Times New Roman",serif'>https://anl.app.box.com/s/a6sw2cep34wlz6b9i9jwiotaqoayxcxt</span></a></span><u><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"等线 Light";mso-fareast-theme-font:major-fareast;
+color:blue;mso-bidi-font-weight:bold'><o:p></o:p></span></u></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:20.0pt;
+mso-line-height-rule:exactly'><b style='mso-bidi-font-weight:normal'><span
+style='mso-bidi-font-size:10.5pt;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black;mso-themecolor:text1'>图</span></b><b style='mso-bidi-font-weight:
+normal'><span lang=EN-US style='mso-bidi-font-size:10.5pt;font-family:"Times New Roman",serif;
+color:black;mso-themecolor:text1'>3.8. ENDF_v1</span></b><b style='mso-bidi-font-weight:
+normal'><span style='mso-bidi-font-size:10.5pt;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black;mso-themecolor:text1'>版</span></b><b style='mso-bidi-font-weight:
+normal'><span lang=EN-US style='mso-bidi-font-size:10.5pt;font-family:"Times New Roman",serif;
+color:black;mso-themecolor:text1'><o:p></o:p></span></b></p>
+
+<h4 style='margin-left:8.2pt;text-indent:0cm;line-height:20.0pt;mso-line-height-rule:
+exactly;mso-list:l1 level1 lfo6'><![if !supportLists]><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+"Times New Roman"'><span style='mso-list:Ignore'>3.2.2.2<span style='font:7.0pt "Times New Roman"'>
+</span></span></span><![endif]><span lang=EN-US style='font-size:12.0pt;
+font-family:"Times New Roman",serif;mso-fareast-font-family:黑体'><span
+style='mso-spacerun:yes'>&nbsp;</span></span><span style='font-size:12.0pt;
+font-family:黑体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>源码安装方法</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:黑体'><o:p></o:p></span></h4>
+
+<p class=MsoNormal style='text-indent:24.0pt;mso-char-indent-count:2.0;
+line-height:20.0pt;mso-line-height-rule:exactly'><span style='font-size:12.0pt;
+font-family:"等线 Light";mso-ascii-font-family:"Times New Roman";mso-fareast-theme-font:
+major-fareast;mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";mso-bidi-font-weight:bold'>源码方法安装的</span><span class=SpellE><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"等线 Light";mso-fareast-theme-font:major-fareast;
+mso-bidi-font-weight:bold'>OpenMC</span></span><span style='font-size:12.0pt;
+font-family:"等线 Light";mso-ascii-font-family:"Times New Roman";mso-fareast-theme-font:
+major-fareast;mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";mso-bidi-font-weight:bold'>是通常是</span><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+"等线 Light";mso-fareast-theme-font:major-fareast;mso-bidi-font-weight:bold'>v2</span><span
+style='font-size:12.0pt;font-family:"等线 Light";mso-ascii-font-family:"Times New Roman";
+mso-fareast-theme-font:major-fareast;mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";mso-bidi-font-weight:bold'>版，但也有另外情况。只要在</span><span
+class=SpellE><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"等线 Light";mso-fareast-theme-font:major-fareast;
+mso-bidi-font-weight:bold'>OpenMC</span></span><span style='font-size:12.0pt;
+font-family:"等线 Light";mso-ascii-font-family:"Times New Roman";mso-fareast-theme-font:
+major-fareast;mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";mso-bidi-font-weight:bold'>源码托管仓库的</span><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+"等线 Light";mso-fareast-theme-font:major-fareast;mso-bidi-font-weight:bold'>release</span><span
+style='font-size:12.0pt;font-family:"等线 Light";mso-ascii-font-family:"Times New Roman";
+mso-fareast-theme-font:major-fareast;mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";mso-bidi-font-weight:bold'>下载（</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"等线 Light";mso-fareast-theme-font:major-fareast;
+mso-bidi-font-weight:bold'>0.10.0</span><span style='font-size:12.0pt;
+font-family:"等线 Light";mso-ascii-font-family:"Times New Roman";mso-fareast-theme-font:
+major-fareast;mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";mso-bidi-font-weight:bold'>）源码包进行编译安装，会得到</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"等线 Light";mso-fareast-theme-font:major-fareast;
+mso-bidi-font-weight:bold'>v1</span><span style='font-size:12.0pt;font-family:
+"等线 Light";mso-ascii-font-family:"Times New Roman";mso-fareast-theme-font:major-fareast;
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+mso-bidi-font-weight:bold'>版，因为压缩包的代码未更新。由于更新后的代码<span class=GramE>移除了</span>获取核数据库的脚本（</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"等线 Light";mso-fareast-theme-font:major-fareast;
+mso-bidi-font-weight:bold'>release</span><span class=GramE><span
+style='font-size:12.0pt;font-family:"等线 Light";mso-ascii-font-family:"Times New Roman";
+mso-fareast-theme-font:major-fareast;mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";mso-bidi-font-weight:bold'>源码包未删除</span></span><span
+style='font-size:12.0pt;font-family:"等线 Light";mso-ascii-font-family:"Times New Roman";
+mso-fareast-theme-font:major-fareast;mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";mso-bidi-font-weight:bold'>），需个人下载获取脚本，仓库位于</span><span
+class=SpellE><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"等线 Light";mso-fareast-theme-font:major-fareast;
+mso-bidi-font-weight:bold'>Github</span></span><span style='font-size:12.0pt;
+font-family:"等线 Light";mso-ascii-font-family:"Times New Roman";mso-fareast-theme-font:
+major-fareast;mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";mso-bidi-font-weight:bold'>的</span><span class=SpellE><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"等线 Light";mso-fareast-theme-font:major-fareast;
+mso-bidi-font-weight:bold'>openmc</span></span><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+"等线 Light";mso-fareast-theme-font:major-fareast;mso-bidi-font-weight:bold'>-dev/data
+</span><span style='font-size:12.0pt;font-family:"等线 Light";mso-ascii-font-family:
+"Times New Roman";mso-fareast-theme-font:major-fareast;mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";mso-bidi-font-weight:
+bold'>：</span><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"等线 Light";mso-fareast-theme-font:major-fareast;
+mso-bidi-font-weight:bold'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:24.0pt;
+mso-char-indent-count:2.0;line-height:20.0pt;mso-line-height-rule:exactly'><span
+class=GramE><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+color:#7030A0;background:white'>python </span><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+"等线 Light";mso-fareast-theme-font:major-fareast;mso-bidi-font-weight:bold'><span
+style='mso-spacerun:yes'>&nbsp;</span>convert_nndc71.py</span></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"等线 Light";mso-fareast-theme-font:major-fareast;
+mso-bidi-font-weight:bold'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:24.0pt;mso-char-indent-count:2.0;
+line-height:20.0pt;mso-line-height-rule:exactly'><span style='font-size:12.0pt;
+font-family:"等线 Light";mso-ascii-font-family:"Times New Roman";mso-fareast-theme-font:
+major-fareast;mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";mso-bidi-font-weight:bold'>可通过以下网站，下载</span><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+"等线 Light";mso-fareast-theme-font:major-fareast;mso-bidi-font-weight:bold'>HDF5</span><span
+style='font-size:12.0pt;font-family:"等线 Light";mso-ascii-font-family:"Times New Roman";
+mso-fareast-theme-font:major-fareast;mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";mso-bidi-font-weight:bold'>格式的</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"等线 Light";mso-fareast-theme-font:major-fareast;
+mso-bidi-font-weight:bold'>v2</span><span style='font-size:12.0pt;font-family:
+"等线 Light";mso-ascii-font-family:"Times New Roman";mso-fareast-theme-font:major-fareast;
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+mso-bidi-font-weight:bold'>版</span><span lang=EN-US style='font-size:12.0pt;
+font-family:"Times New Roman",serif;mso-fareast-font-family:"等线 Light";
+mso-fareast-theme-font:major-fareast;mso-bidi-font-weight:bold'>ENDF/B-VII.1</span><span
+style='font-size:12.0pt;font-family:"等线 Light";mso-ascii-font-family:"Times New Roman";
+mso-fareast-theme-font:major-fareast;mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";mso-bidi-font-weight:bold'>库，下载需要代理：</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"等线 Light";mso-fareast-theme-font:major-fareast;
+mso-bidi-font-weight:bold'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:21.0pt;
+mso-char-indent-count:2.0;line-height:20.0pt;mso-line-height-rule:exactly'><span
+lang=EN-US><a href="https://anl.app.box.com/s/snrluuy79o2fffpvpng9bsuis5kl811d"><span
+style='font-size:12.0pt;font-family:"Times New Roman",serif'>https://anl.app.box.com/s/snrluuy79o2fffpvpng9bsuis5kl811d</span></a></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"等线 Light";mso-fareast-theme-font:major-fareast;
+mso-bidi-font-weight:bold'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:24.0pt;mso-char-indent-count:2.0;
+line-height:20.0pt;mso-line-height-rule:exactly'><span style='font-size:12.0pt;
+font-family:"等线 Light";mso-ascii-font-family:"Times New Roman";mso-fareast-theme-font:
+major-fareast;mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";mso-bidi-font-weight:bold'>或访问</span><span class=SpellE><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"等线 Light";mso-fareast-theme-font:major-fareast;
+mso-bidi-font-weight:bold'>OpenMC</span></span><span style='font-size:12.0pt;
+font-family:"等线 Light";mso-ascii-font-family:"Times New Roman";mso-fareast-theme-font:
+major-fareast;mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";mso-bidi-font-weight:bold'>预合成横截面库网站下载，如图</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"等线 Light";mso-fareast-theme-font:major-fareast;
+mso-bidi-font-weight:bold'>3.9</span><span style='font-size:12.0pt;font-family:
+"等线 Light";mso-ascii-font-family:"Times New Roman";mso-fareast-theme-font:major-fareast;
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+mso-bidi-font-weight:bold'>，下载需要代理：</span><span lang=EN-US style='font-size:
+12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:"等线 Light";
+mso-fareast-theme-font:major-fareast;mso-bidi-font-weight:bold'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:21.0pt;
+mso-char-indent-count:2.0;line-height:20.0pt;mso-line-height-rule:exactly'><span
+lang=EN-US><a href="https://openmc.mcs.anl.gov/lanl-data-libraries/"><span
+style='font-size:12.0pt;font-family:"Times New Roman",serif'>https://openmc.mcs.anl.gov/lanl-data-libraries/</span></a></span><u><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"等线 Light";mso-fareast-theme-font:major-fareast;
+color:blue;mso-bidi-font-weight:bold'><o:p></o:p></span></u></p>
+
+<h3 style='margin-left:8.2pt;text-indent:0cm;line-height:20.0pt;mso-line-height-rule:
+exactly;mso-list:l0 level1 lfo5'><![if !supportLists]><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+"Times New Roman"'><span style='mso-list:Ignore'>3.2.3<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=EN-US style='font-size:12.0pt;
+font-family:"Times New Roman",serif;mso-fareast-font-family:黑体'>JEFF3.2</span><span
+style='font-size:12.0pt;font-family:黑体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman"'>数据库</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:黑体'><o:p></o:p></span></h3>
+
+<p class=MsoNormal style='text-indent:24.0pt;mso-char-indent-count:2.0;
+line-height:20.0pt;mso-line-height-rule:exactly'><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+"等线 Light";mso-fareast-theme-font:major-fareast;mso-bidi-font-weight:bold'>JEFF</span><span
+style='font-size:12.0pt;font-family:"等线 Light";mso-ascii-font-family:"Times New Roman";
+mso-fareast-theme-font:major-fareast;mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";mso-bidi-font-weight:bold'>库是核能组织</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"等线 Light";mso-fareast-theme-font:major-fareast;
+mso-bidi-font-weight:bold'>NEA<sup>[26]</sup></span><span style='font-size:
+12.0pt;font-family:"等线 Light";mso-ascii-font-family:"Times New Roman";
+mso-fareast-theme-font:major-fareast;mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";mso-bidi-font-weight:bold'>（</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"等线 Light";mso-fareast-theme-font:major-fareast;
+mso-bidi-font-weight:bold'>The Nuclear Energy Agency</span><span
+style='font-size:12.0pt;font-family:"等线 Light";mso-ascii-font-family:"Times New Roman";
+mso-fareast-theme-font:major-fareast;mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";mso-bidi-font-weight:bold'>）的一个项目，该库提供了</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"等线 Light";mso-fareast-theme-font:major-fareast;
+mso-bidi-font-weight:bold'>12</span><span style='font-size:12.0pt;font-family:
+"等线 Light";mso-ascii-font-family:"Times New Roman";mso-fareast-theme-font:major-fareast;
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+mso-bidi-font-weight:bold'>种不同温度的中子反应库以及不同温度下的热散射库。</span><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+"等线 Light";mso-fareast-theme-font:major-fareast;mso-bidi-font-weight:bold'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:20.0pt;
+mso-line-height-rule:exactly'><!--[if gte vml 1]><o:wrapblock><v:shape id="图片_x0020_52"
+  o:spid="_x0000_s1029" type="#_x0000_t75" alt="图片包含 屏幕截图&#10;&#10;描述已自动生成"
+  style='position:absolute;left:0;text-align:left;margin-left:0;margin-top:19.45pt;
+  width:315.75pt;height:146.25pt;z-index:251662336;visibility:visible;
+  mso-wrap-style:square;mso-width-percent:0;mso-height-percent:0;
+  mso-wrap-distance-left:9pt;mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;
+  mso-wrap-distance-bottom:0;mso-position-horizontal:center;
+  mso-position-horizontal-relative:margin;mso-position-vertical:absolute;
+  mso-position-vertical-relative:text;mso-width-percent:0;mso-height-percent:0;
+  mso-width-relative:page;mso-height-relative:page'>
+  <v:imagedata src="OpenMC程序的编译与安装.files/image017.png" o:title="图片包含 屏幕截图&#10;&#10;描述已自动生成"/>
+  <w:wrap type="topAndBottom" anchorx="margin"/>
+ </v:shape><![endif]--><![if !vml]><img width=421 height=195
+ src="OpenMC程序的编译与安装.files/image018.png" alt="图片包含 屏幕截图&#10;&#10;描述已自动生成"
+ v:shapes="图片_x0020_52"><![endif]><!--[if gte vml 1]></o:wrapblock><![endif]--><br
+style='mso-ignore:vglayout' clear=ALL>
+<b style='mso-bidi-font-weight:normal'><span style='mso-bidi-font-size:10.5pt;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black;mso-themecolor:text1'>图</span></b><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='mso-bidi-font-size:
+10.5pt;font-family:"Times New Roman",serif;color:black;mso-themecolor:text1'>3.9.<span
+style='mso-spacerun:yes'>&nbsp; </span><span class=SpellE>OpenMC</span></span></b><b
+style='mso-bidi-font-weight:normal'><span style='mso-bidi-font-size:10.5pt;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black;mso-themecolor:text1'>预合成横截面库</span></b><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"等线 Light";mso-fareast-theme-font:major-fareast;
+mso-bidi-font-weight:bold'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:24.0pt;mso-char-indent-count:2.0;
+line-height:20.0pt;mso-line-height-rule:exactly'><span style='font-size:12.0pt;
+font-family:"等线 Light";mso-ascii-font-family:"Times New Roman";mso-fareast-theme-font:
+major-fareast;mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";mso-bidi-font-weight:bold'>注意：整个库的压缩文件高达</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"等线 Light";mso-fareast-theme-font:major-fareast;
+mso-bidi-font-weight:bold'>9GB</span><span style='font-size:12.0pt;font-family:
+"等线 Light";mso-ascii-font-family:"Times New Roman";mso-fareast-theme-font:major-fareast;
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+mso-bidi-font-weight:bold'>，生成</span><span class=SpellE><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+"等线 Light";mso-fareast-theme-font:major-fareast;mso-bidi-font-weight:bold'>OpenMC</span></span><span
+style='font-size:12.0pt;font-family:"等线 Light";mso-ascii-font-family:"Times New Roman";
+mso-fareast-theme-font:major-fareast;mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";mso-bidi-font-weight:bold'>支持的</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"等线 Light";mso-fareast-theme-font:major-fareast;
+mso-bidi-font-weight:bold'>HDF5</span><span style='font-size:12.0pt;font-family:
+"等线 Light";mso-ascii-font-family:"Times New Roman";mso-fareast-theme-font:major-fareast;
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+mso-bidi-font-weight:bold'>格式文件，系统需要准备大于</span><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+"等线 Light";mso-fareast-theme-font:major-fareast;mso-bidi-font-weight:bold'>40GB</span><span
+style='font-size:12.0pt;font-family:"等线 Light";mso-ascii-font-family:"Times New Roman";
+mso-fareast-theme-font:major-fareast;mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";mso-bidi-font-weight:bold'>的存储空间。</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"等线 Light";mso-fareast-theme-font:major-fareast;
+mso-bidi-font-weight:bold'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:24.0pt;mso-char-indent-count:2.0;
+line-height:20.0pt;mso-line-height-rule:exactly'><span style='font-size:12.0pt;
+font-family:"等线 Light";mso-ascii-font-family:"Times New Roman";mso-fareast-theme-font:
+major-fareast;mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";mso-bidi-font-weight:bold'>由于访问</span><span class=SpellE><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"等线 Light";mso-fareast-theme-font:major-fareast;
+mso-bidi-font-weight:bold'>jeff</span></span><span style='font-size:12.0pt;
+font-family:"等线 Light";mso-ascii-font-family:"Times New Roman";mso-fareast-theme-font:
+major-fareast;mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";mso-bidi-font-weight:bold'>库的链接被</span><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+"等线 Light";mso-fareast-theme-font:major-fareast;mso-bidi-font-weight:bold'>Great
+Fire Wall</span><span style='font-size:12.0pt;font-family:"等线 Light";
+mso-ascii-font-family:"Times New Roman";mso-fareast-theme-font:major-fareast;
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+mso-bidi-font-weight:bold'>屏蔽，因此正常无法访问网页，需借助代理。</span><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+"等线 Light";mso-fareast-theme-font:major-fareast;mso-bidi-font-weight:bold'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:24.0pt;mso-char-indent-count:2.0;
+line-height:20.0pt;mso-line-height-rule:exactly'><span style='font-size:12.0pt;
+font-family:"等线 Light";mso-ascii-font-family:"Times New Roman";mso-fareast-theme-font:
+major-fareast;mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";mso-bidi-font-weight:bold'>若采用</span><span class=SpellE><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"等线 Light";mso-fareast-theme-font:major-fareast;
+mso-bidi-font-weight:bold'>conda</span></span><span style='font-size:12.0pt;
+font-family:"等线 Light";mso-ascii-font-family:"Times New Roman";mso-fareast-theme-font:
+major-fareast;mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";mso-bidi-font-weight:bold'>方法安装</span><span class=SpellE><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"等线 Light";mso-fareast-theme-font:major-fareast;
+mso-bidi-font-weight:bold'>OpenMC</span></span><span style='font-size:12.0pt;
+font-family:"等线 Light";mso-ascii-font-family:"Times New Roman";mso-fareast-theme-font:
+major-fareast;mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";mso-bidi-font-weight:bold'>，只需命令行模式，输入：</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"等线 Light";mso-fareast-theme-font:major-fareast;
+mso-bidi-font-weight:bold'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:24.0pt;
+mso-char-indent-count:2.0;line-height:20.0pt;mso-line-height-rule:exactly'><span
+class=SpellE><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+color:#7030A0;background:white'>openmc</span></span><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif;color:#7030A0;
+background:white'>-get-<span class=SpellE>jeff</span>-data<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:24.0pt;mso-char-indent-count:2.0;
+line-height:20.0pt;mso-line-height-rule:exactly'><span style='font-size:12.0pt;
+font-family:"等线 Light";mso-ascii-font-family:"Times New Roman";mso-fareast-theme-font:
+major-fareast;mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";mso-bidi-font-weight:bold'>注意：该方法只安装</span><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+"等线 Light";mso-fareast-theme-font:major-fareast;mso-bidi-font-weight:bold'>v1</span><span
+class=GramE><span style='font-size:12.0pt;font-family:"等线 Light";mso-ascii-font-family:
+"Times New Roman";mso-fareast-theme-font:major-fareast;mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";mso-bidi-font-weight:
+bold'>版核数据</span></span><span style='font-size:12.0pt;font-family:"等线 Light";
+mso-ascii-font-family:"Times New Roman";mso-fareast-theme-font:major-fareast;
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+mso-bidi-font-weight:bold'>。由于数据量大、网络状态不稳定，可能使下载的数据包丢失。解决办法，<span class=GramE>请访问</span>本文的教程网站，如图</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"等线 Light";mso-fareast-theme-font:major-fareast;
+mso-bidi-font-weight:bold'>3.10</span><span style='font-size:12.0pt;font-family:
+"等线 Light";mso-ascii-font-family:"Times New Roman";mso-fareast-theme-font:major-fareast;
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+mso-bidi-font-weight:bold'>：</span><span lang=EN-US style='font-size:12.0pt;
+font-family:"Times New Roman",serif;mso-fareast-font-family:"等线 Light";
+mso-fareast-theme-font:major-fareast;mso-bidi-font-weight:bold'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:21.0pt;
+mso-char-indent-count:2.0;line-height:20.0pt;mso-line-height-rule:exactly'><!--[if gte vml 1]><o:wrapblock><v:shape
+  id="图片_x0020_10" o:spid="_x0000_s1028" type="#_x0000_t75" alt="图片包含 屏幕截图&#10;&#10;描述已自动生成"
+  style='position:absolute;left:0;text-align:left;margin-left:0;margin-top:23.3pt;
+  width:345.75pt;height:113.25pt;z-index:251659264;visibility:visible;
+  mso-wrap-style:square;mso-width-percent:0;mso-height-percent:0;
+  mso-wrap-distance-left:9pt;mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;
+  mso-wrap-distance-bottom:0;mso-position-horizontal:center;
+  mso-position-horizontal-relative:margin;mso-position-vertical:absolute;
+  mso-position-vertical-relative:text;mso-width-percent:0;mso-height-percent:0;
+  mso-width-relative:page;mso-height-relative:page'>
+  <v:imagedata src="OpenMC程序的编译与安装.files/image019.png" o:title="图片包含 屏幕截图&#10;&#10;描述已自动生成"/>
+  <w:wrap type="topAndBottom" anchorx="margin"/>
+ </v:shape><![endif]--><![if !vml]><img width=461 height=151
+ src="OpenMC程序的编译与安装.files/image020.png" alt="图片包含 屏幕截图&#10;&#10;描述已自动生成"
+ v:shapes="图片_x0020_10"><![endif]><!--[if gte vml 1]></o:wrapblock><![endif]--><br
+style='mso-ignore:vglayout' clear=ALL>
+<span lang=EN-US><a href="https://github.com/t2015q/OpenMC-Users-Guide"><span
+style='font-size:12.0pt;font-family:"Times New Roman",serif'>https://github.com/t2015q/OpenMC-Users-Guide</span></a></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"等线 Light";mso-fareast-theme-font:major-fareast;
+mso-bidi-font-weight:bold'> <o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:20.0pt;
+mso-line-height-rule:exactly'><b style='mso-bidi-font-weight:normal'><span
+style='mso-bidi-font-size:10.5pt;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black;mso-themecolor:text1'>图</span></b><b style='mso-bidi-font-weight:
+normal'><span lang=EN-US style='mso-bidi-font-size:10.5pt;font-family:"Times New Roman",serif;
+color:black;mso-themecolor:text1'>3.10. <span class=SpellE>OpenMC</span>-Users-Guide</span></b><b
+style='mso-bidi-font-weight:normal'><span style='mso-bidi-font-size:10.5pt;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black;mso-themecolor:text1'>仓库</span></b><b
+style='mso-bidi-font-weight:normal'><span style='mso-bidi-font-size:10.5pt;
+font-family:"Times New Roman",serif;color:black;mso-themecolor:text1'> <span
+lang=EN-US><o:p></o:p></span></span></b></p>
+
+<p class=MsoNormal style='text-indent:24.0pt;mso-char-indent-count:2.0;
+line-height:20.0pt;mso-line-height-rule:exactly'><span style='font-size:12.0pt;
+font-family:"等线 Light";mso-ascii-font-family:"Times New Roman";mso-fareast-theme-font:
+major-fareast;mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";mso-bidi-font-weight:bold'>需要</span><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+"等线 Light";mso-fareast-theme-font:major-fareast;mso-bidi-font-weight:bold'>v2</span><span
+style='font-size:12.0pt;font-family:"等线 Light";mso-ascii-font-family:"Times New Roman";
+mso-fareast-theme-font:major-fareast;mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";mso-bidi-font-weight:bold'>版的核数据，只需访问预合成横截面库网站：</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"等线 Light";mso-fareast-theme-font:major-fareast;
+mso-bidi-font-weight:bold'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:21.0pt;
+mso-char-indent-count:2.0;line-height:20.0pt;mso-line-height-rule:exactly'><span
+lang=EN-US><a href="https://openmc.mcs.anl.gov/lanl-data-libraries/"><span
+style='font-size:12.0pt;font-family:"Times New Roman",serif'>https://openmc.mcs.anl.gov/lanl-data-libraries/</span></a></span><u><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"等线 Light";mso-fareast-theme-font:major-fareast;
+color:blue;mso-bidi-font-weight:bold'><o:p></o:p></span></u></p>
+
+<h3 style='margin-left:8.2pt;text-indent:0cm;line-height:20.0pt;mso-line-height-rule:
+exactly;mso-list:l0 level1 lfo5'><![if !supportLists]><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+"Times New Roman"'><span style='mso-list:Ignore'>3.2.4<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:12.0pt;font-family:黑体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>路径设置方法</span><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+黑体'><o:p></o:p></span></h3>
+
+<p class=MsoNormal style='text-indent:24.0pt;mso-char-indent-count:2.0;
+line-height:20.0pt;mso-line-height-rule:exactly'><span style='font-size:12.0pt;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:#222222;background:white'>数据库安装完毕，但</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+color:#222222;background:white'>bash</span><span style='font-size:12.0pt;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:#222222;background:white'>未设置</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+color:#222222;background:white'>OPENMC_CROSS_SECTIONS</span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";color:#222222;
+background:white'>的环境变量，</span><span class=SpellE><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif;color:#222222;
+background:white'>OpenMC</span></span><span style='font-size:12.0pt;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:#222222;background:white'>不知到哪里读取核数据文件</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+color:#222222;background:white'>,</span><span style='font-size:12.0pt;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:#222222;background:white'>也就无法准确划分天然核素的种类。因此，参考图</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+color:#222222;background:white'>3.11(<span class=SpellE>a,b</span>)</span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";color:#222222;
+background:white'>，</span><span lang=EN-US style='font-size:12.0pt;font-family:
+"Times New Roman",serif;color:#222222;background:white'>vi</span><span
+style='font-size:12.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";color:#222222;
+background:white'>编辑器对</span><span lang=EN-US style='font-size:12.0pt;
+font-family:"Times New Roman",serif;color:#222222;background:white'>.<span
+class=SpellE>bashrc</span></span><span style='font-size:12.0pt;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";color:#222222;background:white'>文件进行设置：</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+color:#222222;background:white'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:24.0pt;
+mso-char-indent-count:2.0;line-height:20.0pt;mso-line-height-rule:exactly'><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+color:#7030A0;background:white'>vi<span style='mso-spacerun:yes'>&nbsp; </span></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+color:#222222;background:white'><span
+style='mso-spacerun:yes'>&nbsp;&nbsp;</span>~<span class=GramE>/.<span
+class=SpellE>bashrc</span></span><span style='mso-spacerun:yes'>&nbsp;&nbsp;
+</span><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:24.0pt;
+mso-char-indent-count:2.0;line-height:20.0pt;mso-line-height-rule:exactly'><span
+class=GramE><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+color:#FFC000;background:white'>export</span><span lang=EN-US style='font-size:
+12.0pt;font-family:"Times New Roman",serif;color:#222222;background:white'><span
+style='mso-spacerun:yes'>&nbsp; </span></span><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif;color:#0070C0;
+background:white'>OPENMC</span></span><span lang=EN-US style='font-size:12.0pt;
+font-family:"Times New Roman",serif;color:#0070C0;background:white'>_CROSS_SECTIONS=</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+color:#222222;background:white'>&quot;/ <span class=SpellE>your_path_to</span>/cross_sections.xml&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:24.0pt;
+mso-char-indent-count:2.0;line-height:20.0pt;mso-line-height-rule:exactly'><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+color:#7030A0;background:white'>source</span><span lang=EN-US style='font-size:
+12.0pt;font-family:"Times New Roman",serif;color:#222222;background:white'><span
+style='mso-spacerun:yes'>&nbsp;&nbsp; </span>~<span class=GramE>/.<span
+class=SpellE>bashrc</span></span><span style='mso-spacerun:yes'>&nbsp;&nbsp;
+</span><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><!--[if gte vml 1]><o:wrapblock><v:shape
+  id="图片_x0020_53" o:spid="_x0000_s1027" type="#_x0000_t75" style='position:absolute;
+  left:0;text-align:left;margin-left:0;margin-top:20.05pt;width:456.4pt;
+  height:70.4pt;z-index:251660288;visibility:visible;mso-wrap-style:square;
+  mso-width-percent:0;mso-height-percent:0;mso-wrap-distance-left:9pt;
+  mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;
+  mso-wrap-distance-bottom:0;mso-position-horizontal:center;
+  mso-position-horizontal-relative:margin;mso-position-vertical:absolute;
+  mso-position-vertical-relative:text;mso-width-percent:0;mso-height-percent:0;
+  mso-width-relative:page;mso-height-relative:page'>
+  <v:imagedata src="OpenMC程序的编译与安装.files/image021.png" o:title=""/>
+  <w:wrap type="topAndBottom" anchorx="margin"/>
+ </v:shape><![endif]--><![if !vml]><img width=609 height=94
+ src="OpenMC程序的编译与安装.files/image022.png" v:shapes="图片_x0020_53"><![endif]><!--[if gte vml 1]></o:wrapblock><![endif]--><br
+style='mso-ignore:vglayout' clear=ALL>
+<span lang=EN-US style='font-size:11.5pt;font-family:"Arial",sans-serif;
+color:#222222;background:white'><o:p></o:p></span></p>
+
+<p class=MsoListParagraph align=center style='margin-left:21.0pt;text-align:
+center;text-indent:-21.0pt;mso-char-indent-count:0;line-height:20.0pt;
+mso-line-height-rule:exactly;mso-list:l2 level1 lfo1'><![if !supportLists]><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='mso-bidi-font-size:
+10.5pt;font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman";
+color:black;mso-themecolor:text1'><span style='mso-list:Ignore'>(a)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></b><![endif]><b
+style='mso-bidi-font-weight:normal'><span style='mso-bidi-font-size:10.5pt;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black;mso-themecolor:text1'>图</span></b><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='mso-bidi-font-size:
+10.5pt;font-family:"Times New Roman",serif;color:black;mso-themecolor:text1'>3.11.
+.<span class=SpellE>bashrc</span></span></b><b style='mso-bidi-font-weight:
+normal'><span style='mso-bidi-font-size:10.5pt;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black;mso-themecolor:text1'>设置横截面环境变量</span></b><b style='mso-bidi-font-weight:
+normal'><span lang=EN-US style='mso-bidi-font-size:10.5pt;font-family:"Times New Roman",serif;
+color:black;mso-themecolor:text1'><o:p></o:p></span></b></p>
+
+<p class=MsoListParagraph align=center style='margin-left:21.0pt;text-align:
+center;text-indent:0cm;mso-char-indent-count:0'><span lang=EN-US
+style='font-size:11.5pt;font-family:"Arial",sans-serif;color:#222222;
+background:white'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoListParagraph align=center style='margin-left:21.0pt;text-align:
+center;text-indent:-21.0pt;mso-char-indent-count:0;line-height:20.0pt;
+mso-line-height-rule:exactly;mso-list:l2 level1 lfo1'><![if !supportLists]><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='mso-bidi-font-size:
+10.5pt;font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman";
+color:black;mso-themecolor:text1'><span style='mso-list:Ignore'>(b)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></b><![endif]><b
+style='mso-bidi-font-weight:normal'><span style='mso-bidi-font-size:10.5pt;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black;mso-themecolor:text1'>图</span></b><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='mso-bidi-font-size:
+10.5pt;font-family:"Times New Roman",serif;color:black;mso-themecolor:text1'>3.11.
+vi</span></b><b style='mso-bidi-font-weight:normal'><span style='mso-bidi-font-size:
+10.5pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black;mso-themecolor:text1'>编辑、</span></b><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='mso-bidi-font-size:
+10.5pt;font-family:"Times New Roman",serif;color:black;mso-themecolor:text1'>source</span></b><b
+style='mso-bidi-font-weight:normal'><span style='mso-bidi-font-size:10.5pt;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman";color:black;mso-themecolor:text1'>执行</span></b><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='mso-bidi-font-size:
+10.5pt;font-family:"Times New Roman",serif;color:black;mso-themecolor:text1'>.<span
+class=SpellE>bashrc</span></span></b><b style='mso-bidi-font-weight:normal'><span
+style='mso-bidi-font-size:10.5pt;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman";
+color:black;mso-themecolor:text1'>文件</span></b><!--[if gte vml 1]><o:wrapblock><v:shape
+  id="图片_x0020_54" o:spid="_x0000_s1026" type="#_x0000_t75" style='position:absolute;
+  left:0;text-align:left;margin-left:0;margin-top:3.85pt;width:456.4pt;
+  height:39.7pt;z-index:251661312;visibility:visible;mso-wrap-style:square;
+  mso-width-percent:0;mso-height-percent:0;mso-wrap-distance-left:9pt;
+  mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;
+  mso-wrap-distance-bottom:0;mso-position-horizontal:center;
+  mso-position-horizontal-relative:margin;mso-position-vertical:absolute;
+  mso-position-vertical-relative:text;mso-width-percent:0;mso-height-percent:0;
+  mso-width-relative:page;mso-height-relative:page'>
+  <v:imagedata src="OpenMC程序的编译与安装.files/image023.png" o:title=""/>
+  <w:wrap type="topAndBottom" anchorx="margin"/>
+ </v:shape><![endif]--><![if !vml]><img width=609 height=53
+ src="OpenMC程序的编译与安装.files/image024.png" v:shapes="图片_x0020_54"><![endif]><!--[if gte vml 1]></o:wrapblock><![endif]--><br
+style='mso-ignore:vglayout' clear=ALL>
+<b style='mso-bidi-font-weight:normal'><span lang=EN-US style='mso-bidi-font-size:
+10.5pt;font-family:"Times New Roman",serif;color:black;mso-themecolor:text1'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+</body>
+
+</html>
