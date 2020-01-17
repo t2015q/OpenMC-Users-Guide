@@ -1,0 +1,13 @@
+    MCNP  1. (Continuous Energy ENDF/B-V£©£º1.0036 ¡À .0016
+                
+
+Benchmark-Model keff £º1.0000 ¡À0.0031
+
+
+OpenMC  (ENDF/B-VII) :  0.98316 +/- 0.00116
+
+
+
+
+
+

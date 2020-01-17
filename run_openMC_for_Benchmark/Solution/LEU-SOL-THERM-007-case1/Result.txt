@@ -1,0 +1,9 @@
+    MCNP  1. (Continuous Energy JENDL-3.2 )£º1.0015 ¡À 0.0002
+               
+
+Benchmark-Model keff £º0.9961 ¡À 0.0009,
+
+
+OpenMC  (ENDF/B-VII) :   0.99455 +/- 0.00060
+
+
