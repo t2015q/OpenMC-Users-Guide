@@ -9,7 +9,7 @@ OpenMC官网 : https://openmc.readthedocs.io/en/stable
 这种纯技术类的程序，隔段时间没有使用的话，就容易忘记。再加上，网上至今没有出现OpenMC的中文教程，最终使我萌发写它的冲动。一来防止学到的知识遗漏，二来帮助其他人。然而学而容易，教却很难。因为必须对该程序很熟练才能架得上手。
 
 终于，利用自己实践的经验，再借助网上对OpenMC的英文介绍，以及
-[Openmc Users Group](https://groups.google.com/forum/?nomobile=true#!forum/openmc-users)
+[Openmc Users Group](https://openmc.discourse.group/?mobile_view=0)
 的帮助，使得OpenMC入门教程得以完成。我希望这份教程能够帮得上你，尤其是当今有个国家还实行互联网封锁，给科研人员的工作和交流产生极大地不便。这份教程最大特色是吸收大部分GFW封锁的OpenMC资源，假如你不会科学上网，那么这份教程对你的帮助将会是巨大的。
 
 ## 你将学会如何编译、安装、使用OpenMC
